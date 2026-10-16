@@ -3,7 +3,7 @@
  * 生成 DSH 官方市场可读的「格式 1」索引（MarketIndex）。
  *
  * 数据链路（三源交叉，任一环缺失的条目直接丢弃）：
- *   1. dsh.so /plugins-index.json —— 21k 条目的验证与安全结论（L4/L5、audited、riskLevel）;
+ *   1. dsh.so /plugins-index.json —— 约 21k 条目的验证与安全结论（L4/L5、audited、riskLevel）;
  *   2. awesome-dsh-plugin 目录（npm 包 dsh-plugin-catalog）—— 收录门禁是 package.json 声明
  *      `dsh.bundle`（即真正可 `dsh plugin add` 的插件），并提供可靠的 npm 包名;
  *   3. npm registry —— 每个版本的**真实**发布时间（格式 1 要求 publishTimestamp，官方校验器
@@ -112,7 +112,7 @@ function versionsFromPackument(doc) {
       version: v,
       publishTimestamp: Math.floor(Date.parse(times[v]) / 1000),
       source: { type: 'npm' },
-      ...(range ? { engines: { dsh: range } } : { engines: {} }),
+      engines: range ? { dsh: range } : {},
       _kw: kw,
       _home: typeof m.homepage === 'string' && /^https?:\/\//u.test(m.homepage) ? m.homepage : null,
       _desc: typeof m.description === 'string' ? m.description : null,
@@ -138,10 +138,14 @@ function selfCheck(index) {
   if (index.format !== 1) problems.push('format must be 1')
   if (!index.plugins?.length) problems.push('plugins empty')
   const names = new Set()
+  const declared = new Set(Object.keys(index.metadata?.categories ?? {}))
+  const labels = new Set(Object.keys(index.metadata?.labels ?? {}))
   for (const [i, p] of (index.plugins ?? []).entries()) {
     if (typeof p.name !== 'string' || !/^(?:@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/u.test(p.name)) problems.push(`plugins[${i}].name invalid: ${p.name}`)
     if (names.has(p.name)) problems.push(`plugins[${i}].name duplicate: ${p.name}`)
     names.add(p.name)
+    if (p.metadata?.category !== undefined && !declared.has(p.metadata.category)) problems.push(`plugins[${i}].metadata.category not declared: ${p.metadata.category}`)
+    for (const l of p.metadata?.labels ?? []) if (!labels.has(l)) problems.push(`plugins[${i}].metadata.labels not declared: ${l}`)
     if (!Array.isArray(p.versions) || !p.versions.length) problems.push(`plugins[${i}].versions empty`)
     for (const [j, v] of (p.versions ?? []).entries()) {
       if (!/^\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?$/u.test(v.version)) problems.push(`plugins[${i}].versions[${j}].version invalid`)
@@ -212,6 +216,7 @@ async function main() {
     keywords.add(`dsh.so-verified-L${cand.so.level}`)
     cand._keywords = [...keywords].slice(0, 24)
   }
+  for (const { cand } of kept) if (cand.category && !categories[cand.category]) categories[cand.category] = { title: cand.category }
 
   const plugins = kept.map(({ cand, versions }) => {
     const home = versions.map(v => v._home).find(Boolean)
@@ -224,7 +229,10 @@ async function main() {
       author: cand.repo.split('/')[3] ?? '',
       ...(home ? { homepage: home } : {}),
       repository: { url: cand.repo },
-      metadata: { keywords: cand._keywords, labels: [`dsh.so-verified-l${cand.so.level}`], sortKeys: {} },
+      // 必须写 metadata.category：发现页的分类筛选是按它判定的
+      // （dsh-plugin-market：`selection.category === undefined || metadata.category === selection.category`）。
+      // 只把分类 id 塞进 keywords，分类会出现在侧栏但点进去永远是空。
+      metadata: { ...(cand.category ? { category: cand.category } : {}), keywords: cand._keywords, labels: [`dsh.so-verified-l${cand.so.level}`], sortKeys: {} },
       versions: versions.map(({ _kw, _home, _desc, ...v }) => v),
     }
   })
