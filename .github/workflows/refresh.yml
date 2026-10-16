@@ -42,6 +42,14 @@ jobs:
             git push
           fi
 
+      # jsDelivr 对 `@main` 的缓存是 12 小时——不主动 purge 的话，消费方最长要等 12h
+      # 才看到新一轮内容。raw.githubusercontent 自己的 TTL 是 5 分钟，但实测在部分网络
+      # （经代理时）会明显更久，所以把它降级为备用线路。
+      - name: Purge jsDelivr @main cache
+        if: success()
+        run: |
+          curl -sS --max-time 30 -X GET "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/index.json" || true
+
       - name: Summary
         if: always()
         run: |

@@ -15,12 +15,22 @@
 - id: plugin-market
   config:
     indexes:
-      - https://raw.githubusercontent.com/Gcy580231/dsh-market-index/main/index.json
-      - https://cdn.jsdelivr.net/gh/Gcy580231/dsh-market-index@main/index.json   # 备用线路
+      - https://cdn.jsdelivr.net/gh/Gcy580231/dsh-market-index@main/index.json     # 主线路（可在 CI 里 purge）
+      - https://raw.githubusercontent.com/Gcy580231/dsh-market-index/main/index.json # 备用线路
 ```
 
 两条都填，互为兜底。填完重启一次 DSH（或经设置页修改，volatile 字段即时生效）。
 **不需要安装任何插件**，也不需要 GitHub 账号或 token —— 索引是公开静态文件。
+
+### 线路与缓存（实测）
+
+| 线路 | 缓存 | 说明 |
+|---|---|---|
+| jsDelivr `@main` | 12 小时 | 每次 Action 跑完会主动 purge，所以正常不会滞后 |
+| raw.githubusercontent | 标称 5 分钟 | 实测在部分网络（经代理）明显更久，故列为备用 |
+
+索引内容更新后，消费端的 `plugin-market` 自身还有 10 分钟缓存（`cacheTtlMs`），
+所以“Action 跑完”到“界面看到”之间可能有几分钟延迟；发现页刷新或稍等即可。
 
 ## 收录规则（三条同时满足才收）
 
@@ -34,6 +44,9 @@
 并不核验它 —— 这里刻意不编造）。`engines.dsh` 优先用包自己声明的值，缺失时按
 `@deepseek-ai/dsh*` 的 `peerDependencies` 合取推导（与官方参考生成器的规则一致）。
 
+每条还带 `metadata.category`（发现页的分类筛选按它判定，只塞进 `keywords` 的话分类会是空的）
+和 `dsh.so-verified-l4` / `-l5` 标签。
+
 ## 不保证什么
 
 - **不是安全背书**：dsh.so 是静态扫描（启发式），"低危"不等于无风险。
@@ -42,9 +55,9 @@
 
 ## 刷新
 
-`generate.mjs` 每天由 `.github/workflows/refresh.yml` 重跑（也可手动 `workflow_dispatch`）。
-生成失败时**不覆盖**上一次成功的 `index.json`。想调规模：`DSH_INDEX_MAX_PLUGINS`、
-`DSH_INDEX_VERSIONS_PER_PLUGIN`。
+`generate.mjs` 每天由 `.github/workflows/refresh.yml` 重跑（也可手动 `workflow_dispatch`），
+跑完会 purge jsDelivr。生成失败时**不覆盖**上一次成功的 `index.json`。
+想调规模：`DSH_INDEX_MAX_PLUGINS`、`DSH_INDEX_VERSIONS_PER_PLUGIN`。
 
 本地跑：
 
