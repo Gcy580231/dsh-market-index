@@ -1,0 +1,52 @@
+name: refresh index
+
+on:
+  schedule:
+    # 每天 20:17 UTC（= 北京时间次日 04:17）重跑
+    - cron: '17 20 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'generate.mjs'
+      - '.github/workflows/refresh.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-index
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Generate index
+        run: node generate.mjs index.json
+
+      - name: Commit when changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          if git diff --cached --quiet; then
+            echo "index.json unchanged — nothing to commit"
+          else
+            git commit -m "refresh index $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          if [ -f index.json ]; then
+            node -e 'const i=require("./index.json");console.log(`plugins=${i.plugins.length} versions=${i.plugins.reduce((a,p)=>a+p.versions.length,0)} categories=${Object.keys(i.metadata.categories).length}`)' >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "index.json not produced — generation failed" >> "$GITHUB_STEP_SUMMARY"
+          fi
