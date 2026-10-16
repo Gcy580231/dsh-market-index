@@ -26,13 +26,17 @@ jobs:
           node-version: '22'
 
       # 官方校验器：生成器用它的 parseMarketIndex 做解析驱动自愈。
-      # 装不上/卡住都不是致命错误 —— 生成器会退回结构自检（净化规则仍然生效）。
+      # 装不上不是致命错误 —— 生成器会退回结构自检（净化规则仍然生效）。
       - name: Install official index validator
         continue-on-error: true
-        run: timeout 150 npm install --no-audit --no-fund || echo "validator install skipped"
+        run: |
+          set -o pipefail
+          timeout 150 npm install --no-audit --no-fund 2>&1 | tee npm-install.log || echo "validator install skipped"
 
       - name: Generate index
-        run: node generate.mjs index.json
+        run: |
+          set -o pipefail
+          node generate.mjs index.json 2>&1 | tee generate.log
 
       - name: Commit when changed
         run: |
@@ -54,11 +58,24 @@ jobs:
         run: |
           curl -sS --max-time 30 -X GET "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/index.json" || true
 
-      - name: Summary
+      # 把这次运行的输出落到仓库里，失败原因不必再靠人肉翻 Actions 面板。
+      - name: Publish run log
         if: always()
         run: |
-          if [ -f index.json ]; then
-            node -e 'const i=require("./index.json");console.log("plugins="+i.plugins.length+" versions="+i.plugins.reduce((a,p)=>a+p.versions.length,0)+" categories="+Object.keys(i.metadata.categories).length)' >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo "index.json not produced — generation failed" >> "$GITHUB_STEP_SUMMARY"
-          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          {
+            echo "# refresh index run — $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo
+            echo "## npm install"
+            echo '```'
+            tail -n 40 npm-install.log 2>/dev/null || echo "(no npm-install.log)"
+            echo '```'
+            echo "## generate"
+            echo '```'
+            tail -n 60 generate.log 2>/dev/null || echo "(no generate.log)"
+            echo '```'
+          } > ci-last-run.md
+          git add -f ci-last-run.md
+          git commit -m "ci log $(date -u +%Y-%m-%dT%H:%M:%SZ)" || true
+          git push || true
