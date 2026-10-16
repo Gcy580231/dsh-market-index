@@ -1,70 +1,22 @@
-# refresh index run — 2026-10-16T06:46:03Z
+# refresh index run — 2026-10-16T06:48:48Z
 
 ## npm install
 ```
 
-added 6 packages in 2s
+added 6 packages in 1s
 ```
 ## generate
 ```
-[2026-10-16T06:46:03.644Z] repair #142: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.644Z] repair #143: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.645Z] repair #144: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.645Z] repair #145: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.645Z] repair #146: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.645Z] repair #147: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.645Z] repair #148: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.645Z] repair #149: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.645Z] repair #150: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.645Z] repair #151: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.645Z] repair #152: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.646Z] repair #153: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.646Z] repair #154: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.646Z] repair #155: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.646Z] repair #156: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.646Z] repair #157: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.646Z] repair #158: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.646Z] repair #159: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.646Z] repair #160: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.646Z] repair #161: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.647Z] repair #162: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.647Z] repair #163: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.647Z] repair #164: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.647Z] repair #165: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.647Z] repair #166: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.647Z] repair #167: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.647Z] repair #168: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.647Z] repair #169: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.647Z] repair #170: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.647Z] repair #171: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #172: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #173: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #174: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #175: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #176: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #177: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #178: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #179: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #180: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #181: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #182: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #183: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #184: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.648Z] repair #185: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #186: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #187: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #188: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #189: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #190: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #191: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #192: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #193: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #194: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #195: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #196: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #197: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #198: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #199: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] repair #200: dropped $.plugins[0].metadata.labels[0]
-[2026-10-16T06:46:03.649Z] official validation FAILED after 200 repairs — repair budget exhausted
+[2026-10-16T06:48:41.986Z] loading dsh.so verification index …
+[2026-10-16T06:48:42.531Z] dsh.so: 21067 entries, 3868 verified repos (L4/L5 · audited · low risk · 0 critical · repo alive)
+[2026-10-16T06:48:42.531Z] loading community catalog (dsh.bundle-gated) …
+[2026-10-16T06:48:42.796Z] catalog: 4765 entries from https://cdn.jsdelivr.net/npm/dsh-plugin-catalog@2026.1016.5649/plugins.json
+[2026-10-16T06:48:42.799Z] join: 237 candidates, taking 237
+[2026-10-16T06:48:42.799Z] fetching real npm publish times …
+[2026-10-16T06:48:43.701Z]   …50/237
+[2026-10-16T06:48:44.588Z]   …100/237
+[2026-10-16T06:48:45.496Z]   …150/237
+[2026-10-16T06:48:46.410Z]   …200/237
+[2026-10-16T06:48:47.087Z] official parseMarketIndex: ok
+[2026-10-16T06:48:47.091Z] wrote index.json: 237 plugins, 567 versions, 22 categories
 ```
