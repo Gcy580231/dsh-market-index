@@ -10,10 +10,9 @@
  *      并不核验它，所以这里刻意取真值）与 engines.dsh 推导所需的 peerDependencies。
  *
  * 关键约束（踩过的坑，勿删）：
- *   * 官方校验器**整份拒收**：任何一处不合法（例如某个 peer 范围写成 pnpm catalog 协议
- *     `catalog:dsh 0.2.0-rc.2`）都会让整个索引 invalid-index，发现页于是什么都看不到。
- *     所以这里先用保守规则净化范围，再用官方 `parseMarketIndex` 做**解析驱动的自愈**：
- *     按报错路径回退（删掉出问题的 engines.dsh / 丢掉出问题的插件）并重试。
+ *   * 官方校验器**整份拒收**：任何一处不合法（未声明的 label、pnpm catalog 协议的范围
+ *     `catalog:dsh 0.2.0-rc.2` …）都会让整个索引 invalid-index，发现页于是什么都看不到。
+ *     所以：声明与取值共用同一常量，再用官方 `parseMarketIndex` 做**解析驱动的自愈**。
  *   * 发现页的分类筛选按 `plugin.metadata.category` 判定，只塞 keywords 会让分类点进去是空的。
  *   * registry 顺序：npmjs 在前、npmmirror 兜底 —— runner 上 npmmirror 未必稳，本机反之更快。
  *
@@ -34,6 +33,9 @@ const VALIDATOR_PKG = '@deepseek-ai/dsh-plugin-market-index'
 
 const now = () => new Date().toISOString()
 const log = (...a) => console.error(`[${now()}]`, ...a)
+
+/** 标签 id 的唯一事实源：声明与每条的取值必须走同一个函数，否则就是“未声明的标签”整份被拒。 */
+const labelId = (level) => `dsh.so-verified-l${level}`
 
 async function getJson(url, { timeoutMs = 30_000, tries = 3 } = {}) {
   let lastErr
@@ -127,8 +129,7 @@ function dshRange(manifest) {
   return uniq.join(' ') // npm semver：空格即合取
 }
 
-/** npm 元数据的 registry 优先级：npmjs 在前，npmmirror 兜底
- *  （本机反之更快，但 GitHub runner 上 npmmirror 未必稳，所以两边都能跑）。 */
+/** npm 元数据的 registry 优先级：npmjs 在前，npmmirror 兜底 */
 const REGISTRIES = [NPMJS, NPMMIRROR]
 
 /** 取单个包的元数据；两个 registry 都失败返回 null（调用方计入失败数）。 */
@@ -191,7 +192,11 @@ function repair(index, parse, indexUrl) {
     const m = path.match(/^\$\.plugins\[(\d+)\](?:\.versions\[(\d+)\])?/)
     if (!m) return { ok: false, repairs, reason: `${path || '$'}: ${err?.reason ?? err?.message}` }
     const pi = Number(m[1]), vi = m[2] === undefined ? null : Number(m[2])
-    if (vi === null) index.plugins.splice(pi, 1)
+    const labelIdx = path.match(/\.metadata\.labels\[(\d+)\]$/)
+    const kwIdx = path.match(/\.metadata\.keywords\[(\d+)\]$/)
+    if (labelIdx && Array.isArray(index.plugins[pi]?.metadata?.labels)) index.plugins[pi].metadata.labels.splice(Number(labelIdx[1]), 1)
+    else if (kwIdx && Array.isArray(index.plugins[pi]?.metadata?.keywords)) index.plugins[pi].metadata.keywords.splice(Number(kwIdx[1]), 1)
+    else if (vi === null) index.plugins.splice(pi, 1)
     else if (/\.engines\.dsh$/.test(path)) delete index.plugins[pi].versions[vi].engines.dsh
     else if (/\.engines$/.test(path)) delete index.plugins[pi].versions[vi].engines
     else index.plugins[pi].versions.splice(vi, 1)
@@ -296,7 +301,7 @@ async function main() {
       const t = catalogCategories[cand.category]
       categories[cand.category] = { title: { en: t?.en ?? cand.category, zh: t?.zh ?? cand.category } }
     }
-    keywords.add(`dsh.so-verified-L${cand.so.level}`)
+    keywords.add(labelId(cand.so.level))
     cand._keywords = [...keywords].slice(0, 24)
   }
   for (const { cand } of kept) if (cand.category && !categories[cand.category]) categories[cand.category] = { title: cand.category }
@@ -313,7 +318,7 @@ async function main() {
       ...(home ? { homepage: home } : {}),
       repository: { url: cand.repo },
       // 必须写 metadata.category：发现页分类筛选按它判定，只塞 keywords 会让分类点进去是空的。
-      metadata: { ...(cand.category ? { category: cand.category } : {}), keywords: cand._keywords, labels: [`dsh.so-verified-l${cand.so.level}`], sortKeys: {} },
+      metadata: { ...(cand.category ? { category: cand.category } : {}), keywords: cand._keywords, labels: [labelId(cand.so.level)], sortKeys: {} },
       versions: versions.map(({ _kw, _home, _desc, ...v }) => v),
     }
   })
@@ -328,8 +333,8 @@ async function main() {
     metadata: {
       categories,
       labels: {
-        'dsh-so-verified-l5': { title: { en: 'dsh.so L5 run-tested', zh: 'dsh.so L5 实机运行验证' } },
-        'dsh-so-verified-l4': { title: { en: 'dsh.so L4 install-tested', zh: 'dsh.so L4 安装验证' } },
+        [labelId(5)]: { title: { en: 'dsh.so L5 run-tested', zh: 'dsh.so L5 实机运行验证' } },
+        [labelId(4)]: { title: { en: 'dsh.so L4 install-tested', zh: 'dsh.so L4 安装验证' } },
       },
       sortKeys: {},
     },
