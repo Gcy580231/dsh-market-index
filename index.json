@@ -5,11 +5,17 @@
   "zh": "已验证 DSH 插件（dsh.so L4/L5）"
  },
  "description": {
-  "en": "Real, installable DSH plugins only: npm-sourced, gated on a dsh.bundle manifest, and carrying a dsh.so L4/L5 verification and a low-risk security scan. Verification data from dsh.so (https://www.dsh.so, CC-BY-4.0, scanned 2026-10-14T20:05:15.032Z); publish times from the npm registry.",
+  "en": "Real, installable DSH plugins only: npm-sourced, gated on a dsh.bundle manifest, and carrying a dsh.so L4/L5 verification and a low-risk security scan. Verification data from dsh.so (https://www.dsh.so, CC-BY-4.0, scanned 2026-10-15T19:35:01.420Z); publish times from the npm registry.",
   "zh": "只收真实可安装的 DSH 插件：npm 来源、必须有 dsh.bundle manifest，并带有 dsh.so 的 L4/L5 验证与低危安全扫描结论。验证数据来自 dsh.so（https://www.dsh.so，CC-BY-4.0）；版本发布时间取自 npm registry。"
  },
  "metadata": {
   "categories": {
+   "ui": {
+    "title": {
+     "en": "UI Enhancements",
+     "zh": "UI 增强"
+    }
+   },
    "skill": {
     "title": {
      "en": "Skills",
@@ -20,12 +26,6 @@
     "title": {
      "en": "Remote & Mobile",
      "zh": "远程与移动端"
-    }
-   },
-   "ui": {
-    "title": {
-     "en": "UI Enhancements",
-     "zh": "UI 增强"
     }
    },
    "git": {
@@ -88,6 +88,12 @@
      "zh": "AGI 架构探索"
     }
    },
+   "workflow": {
+    "title": {
+     "en": "Workflow & Automation",
+     "zh": "工作流与自动化"
+    }
+   },
    "dev": {
     "title": {
      "en": "Development & Runtime",
@@ -110,12 +116,6 @@
     "title": {
      "en": "Sessions & Messages",
      "zh": "会话与消息"
-    }
-   },
-   "workflow": {
-    "title": {
-     "en": "Workflow & Automation",
-     "zh": "工作流与自动化"
     }
    },
    "usage": {
@@ -160,6 +160,61 @@
   "sortKeys": {}
  },
  "plugins": [
+  {
+   "name": "dsh-whale-widget",
+   "title": "DeepSeek-Balance-Whale-Widget",
+   "description": {
+    "en": "A fixed-corner whale widget for the DSH web GUI — balance, today's usage and per-turn cost with peak/off-peak pricing, editable balance-alert and daily-budget bubbles, a module-based custom bubble queue with A/B weighted choices and random lines or images, 30+ vendor templates (OpenAI, OpenRouter, Kimi, SiliconFlow, Ark, Zhipu, MiniMax and more) with per-model balance and subscription quota, plus ",
+    "zh": "右下角常驻的小鲸鱼挂件：余额、今日已用与每轮对话消耗（含峰谷价），余额预警与今日预算的泡泡内容都可编辑；泡泡点击序列模块化自定义，支持并列加权 A/B、随机台词与随机图片；内置 30+ 厂商模板（OpenAI / OpenRouter / Kimi / 硅基流动 / 方舟 / 智谱 / MiniMax 等），按模型查余额与订阅额度；另有任务结束音效、导入音频、自定义角色与资源管理。数据全在本机，无遥测。"
+   },
+   "author": "meteornox",
+   "homepage": "https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget#readme",
+   "repository": {
+    "url": "https://github.com/meteornox/deepseek-balance-whale-widget"
+   },
+   "metadata": {
+    "category": "ui",
+    "keywords": [
+     "dsh",
+     "dsh-plugin",
+     "deepseek-harness",
+     "balance",
+     "widget",
+     "ui",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.4.2",
+     "publishTimestamp": 1791721632,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
+    {
+     "version": "0.4.1",
+     "publishTimestamp": 1791704086,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
+    {
+     "version": "0.4.0",
+     "publishTimestamp": 1791697701,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    }
+   ]
+  },
   {
    "name": "@linxin666/dsh-client-ui-skill-explorer",
    "title": "dsh-web#packages/dsh-skill-explorer",
@@ -633,6 +688,14 @@
    },
    "versions": [
     {
+     "version": "3.3.0",
+     "publishTimestamp": 1792167964,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
+    {
      "version": "3.2.1",
      "publishTimestamp": 1792039286,
      "source": {
@@ -643,14 +706,6 @@
     {
      "version": "3.2.0",
      "publishTimestamp": 1792029733,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {}
-    },
-    {
-     "version": "3.1.1",
-     "publishTimestamp": 1792019357,
      "source": {
       "type": "npm"
      },
@@ -875,6 +930,60 @@
    ]
   },
   {
+   "name": "dsh-life-pack",
+   "title": "ilife#dsh-life-pack",
+   "description": {
+    "en": "iLife: one DSH settings card for the iLife home-life suite — memo, calorie, chef, home, schedule and bill in a tab bar — covering every part of your home life.",
+    "zh": "爱生活-覆盖你居家生活的方方面面。"
+   },
+   "author": "featherhunter",
+   "homepage": "https://github.com/FeatherHunter/ilife#readme",
+   "repository": {
+    "url": "https://github.com/featherhunter/ilife"
+   },
+   "metadata": {
+    "category": "ui",
+    "keywords": [
+     "dsh",
+     "deepseek-harness",
+     "plugin",
+     "ilife",
+     "ui",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.3.66",
+     "publishTimestamp": 1792179603,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
+    {
+     "version": "0.3.65",
+     "publishTimestamp": 1792157894,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
+    {
+     "version": "0.3.64",
+     "publishTimestamp": 1792139775,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    }
+   ]
+  },
+  {
    "name": "@modusensus/dsh-mneme",
    "title": "mneme#dsh-mneme",
    "description": {
@@ -931,6 +1040,78 @@
    ]
   },
   {
+   "name": "dsh-plugin-guide",
+   "title": "dsh-plugin-guide",
+   "description": {
+    "en": "The DSH plugin-development knowledge base as an on-demand agent skill: official constraints, task workflows, API reference and community gotchas, installed with the bundle so the agent can look things up while building a plugin.",
+    "zh": "DSH 插件开发知识库，作为按需加载的 agent 技能随 bundle 安装：官方约束、任务工作流、API 参考与社区踩坑，写插件时让 DSH 自己查。"
+   },
+   "author": "perrylink",
+   "homepage": "https://github.com/PerryLink/dsh-plugin-guide#readme",
+   "repository": {
+    "url": "https://github.com/perrylink/dsh-plugin-guide"
+   },
+   "metadata": {
+    "category": "skill",
+    "keywords": [
+     "dsh",
+     "dsh-plugin",
+     "dsh-plugin-development",
+     "dsh-skill",
+     "deepseek",
+     "deepseek-harness",
+     "cordis",
+     "plugin-development",
+     "agent-skill",
+     "agent-skills",
+     "knowledge-base",
+     "documentation",
+     "cli",
+     "scaffold",
+     "checker",
+     "typescript",
+     "skill",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.3.33",
+     "publishTimestamp": 1791903249,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0"
+     }
+    },
+    {
+     "version": "0.3.32",
+     "publishTimestamp": 1791902101,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0"
+     }
+    },
+    {
+     "version": "0.3.31",
+     "publishTimestamp": 1791901779,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.2-rc.1 <0.2.0 || >=0.1.5-alpha.1 <0.2.0 || >=0.1.6-0 <0.2.0 || >=0.1.7-0 <0.2.0 || >=0.2.0-0 <0.3.0 || >=0.2.1-0 <0.3.0"
+     }
+    }
+   ]
+  },
+  {
    "name": "@deepblend/dsh-blender-bundle",
    "title": "deep-blend#bundle",
    "description": {
@@ -962,6 +1143,14 @@
    },
    "versions": [
     {
+     "version": "0.14.0",
+     "publishTimestamp": 1792162762,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
+    {
      "version": "0.13.0",
      "publishTimestamp": 1792006863,
      "source": {
@@ -972,14 +1161,6 @@
     {
      "version": "0.12.0",
      "publishTimestamp": 1791977022,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {}
-    },
-    {
-     "version": "0.11.0",
-     "publishTimestamp": 1791957086,
      "source": {
       "type": "npm"
      },
@@ -1045,68 +1226,6 @@
      "engines": {
       "dsh": ">=0.1.2-rc.1"
      }
-    }
-   ]
-  },
-  {
-   "name": "dsh-computer-use-win",
-   "title": "dsh-computer-use-win",
-   "description": {
-    "en": "Windows computer use for DeepSeek Harness: an MCP stdio server over a PowerShell UIA backend exposing 22 desktop tools (UIA tree, screenshots, typed input, OCR, window management, failsafe).",
-    "zh": "为 DeepSeek Harness 提供 Windows 电脑操控：MCP stdio 服务器 + PowerShell UIA 后端，22 个桌面工具（UIA 树、截图、键鼠输入、OCR、窗口管理、急停保护）。"
-   },
-   "author": "yu-tao-li",
-   "homepage": "https://github.com/Yu-tao-Li/dsh-computer-use-win#readme",
-   "repository": {
-    "url": "https://github.com/yu-tao-li/dsh-computer-use-win"
-   },
-   "metadata": {
-    "category": "tools",
-    "keywords": [
-     "deepseek-harness",
-     "dsh",
-     "dsh-plugin",
-     "mcp",
-     "computer-use",
-     "windows",
-     "uia",
-     "desktop-automation",
-     "tools",
-     "dsh.so-verified-l5"
-    ],
-    "labels": [
-     "dsh.so-verified-l5"
-    ],
-    "sortKeys": {}
-   },
-   "versions": [
-    {
-     "version": "0.4.1",
-     "publishTimestamp": 1792000960,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": ">=0.1.0-rc.2 || >=0.2.0-rc.2"
-     }
-    },
-    {
-     "version": "0.4.0",
-     "publishTimestamp": 1791951250,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": ">=0.1.0-rc.2 || >=0.2.0-rc.2"
-     }
-    },
-    {
-     "version": "0.3.1",
-     "publishTimestamp": 1791915616,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {}
     }
    ]
   },
@@ -1365,6 +1484,73 @@
    ]
   },
   {
+   "name": "dsh-agent-board",
+   "title": "task-board-plugin#dsh-agent-board",
+   "description": {
+    "en": "Kanban task board for DeepSeek Harness sessions: the main agent dispatches coding tasks to one-shot worker/verifier subagents, with dependency scheduling, pipeline tiers, escalation handling, and file/notes context injection.",
+    "zh": "DeepSeek Harness 会话任务看板：主窗口把任务派发给一次性 Worker/Verifier 子代理执行与验收，支持依赖调度、管线分档、歧义上报裁决与预研上下文注入。"
+   },
+   "author": "ppawnsir",
+   "homepage": "https://github.com/PPawnsir/task-board-plugin#readme",
+   "repository": {
+    "url": "https://github.com/ppawnsir/task-board-plugin"
+   },
+   "metadata": {
+    "category": "workflow",
+    "keywords": [
+     "dsh",
+     "dsh-plugin",
+     "deepseek-harness",
+     "task-board",
+     "kanban",
+     "agent",
+     "subagent",
+     "multi-agent",
+     "ai-agent",
+     "task-dispatch",
+     "workflow",
+     "orchestration",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "1.8.0",
+     "publishTimestamp": 1791966357,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.1.7 || 0.2.0-rc.2 || ^0.2.0"
+     }
+    },
+    {
+     "version": "1.7.9",
+     "publishTimestamp": 1791813582,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.1.7 || 0.2.0-rc.2 || ^0.2.0"
+     }
+    },
+    {
+     "version": "1.7.8",
+     "publishTimestamp": 1791597395,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.1.7 || 0.2.0-rc.2 || ^0.2.0"
+     }
+    }
+   ]
+  },
+  {
    "name": "@wxg-prc-cpg/dsh-weknora",
    "title": "WeKnora#dsh-weknora",
    "description": {
@@ -1497,6 +1683,16 @@
    },
    "versions": [
     {
+     "version": "0.2.0-rc.2.6",
+     "publishTimestamp": 1792140211,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
      "version": "0.2.0-rc.2.5",
      "publishTimestamp": 1792122967,
      "source": {
@@ -1515,16 +1711,74 @@
      "engines": {
       "dsh": "0.2.0-rc.2"
      }
-    },
+    }
+   ]
+  },
+  {
+   "name": "dsh-deja",
+   "title": "deja-vu#extensions/dsh",
+   "description": {
+    "en": "Reads the session files thirty-three other coding agents on this machine already wrote — Claude Code, Codex, Cursor, VS Code Copilot Chat, opencode, OpenClaw, Hermes, Kimi, Cline, Zed and more — including sessions from before it was installed: six tools (deja_recall, deja_session, deja_blame, deja_fix, deja_how, deja_remember), a /deja command, and optional automatic recall added to the runtime co",
+    "zh": "读取本机上其他三十三个编程智能体已经写下的会话文件——Claude Code、Codex、Cursor、VS Code Copilot Chat、opencode、OpenClaw、Hermes、Kimi、Cline、Zed 等，包括安装之前的历史：提供 deja_recall、deja_session、deja_blame、deja_fix、deja_how、deja_remember 六个工具与 /deja 命令，并可选地把召回结果加入运行时上下文。本地 BM25 索引，不用大模型，不用向量嵌入，不联网（dsh plugin --profile web add dsh-deja）。"
+   },
+   "author": "vshulcz",
+   "homepage": "https://vshulcz.github.io/deja-vu/guide/memory-for-dsh.html",
+   "repository": {
+    "url": "https://github.com/vshulcz/deja-vu"
+   },
+   "metadata": {
+    "category": "memory",
+    "keywords": [
+     "dsh",
+     "dsh-plugin",
+     "deepseek-harness",
+     "memory",
+     "recall",
+     "session-history",
+     "migration",
+     "agent-memory",
+     "ai-memory",
+     "coding-agent",
+     "claude-code",
+     "claude-code-memory",
+     "codex",
+     "cursor",
+     "gemini-cli",
+     "mcp",
+     "mcp-server",
+     "session-search",
+     "local-first",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
     {
-     "version": "0.2.0-rc.2.3",
-     "publishTimestamp": 1792060424,
+     "version": "0.22.1",
+     "publishTimestamp": 1791807989,
      "source": {
       "type": "npm"
      },
-     "engines": {
-      "dsh": "0.2.0-rc.2"
-     }
+     "engines": {}
+    },
+    {
+     "version": "0.22.0",
+     "publishTimestamp": 1791562774,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
+    {
+     "version": "0.21.7",
+     "publishTimestamp": 1791291756,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
     }
    ]
   },
@@ -1553,6 +1807,16 @@
    },
    "versions": [
     {
+     "version": "0.2.0-rc.2.6",
+     "publishTimestamp": 1792140330,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
      "version": "0.2.0-rc.2.5",
      "publishTimestamp": 1792123202,
      "source": {
@@ -1565,16 +1829,6 @@
     {
      "version": "0.2.0-rc.2.4",
      "publishTimestamp": 1792120849,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "0.2.0-rc.2"
-     }
-    },
-    {
-     "version": "0.2.0-rc.2.3",
-     "publishTimestamp": 1792060860,
      "source": {
       "type": "npm"
      },
@@ -1787,6 +2041,16 @@
    },
    "versions": [
     {
+     "version": "0.1.25",
+     "publishTimestamp": 1792136999,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.5-rc.1 || >=0.1.6-alpha.1 || >=0.1.7-alpha.1 || >=0.2.0-rc.1"
+     }
+    },
+    {
      "version": "0.1.24",
      "publishTimestamp": 1791979615,
      "source": {
@@ -1799,16 +2063,6 @@
     {
      "version": "0.1.23",
      "publishTimestamp": 1791969755,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": ">=0.1.5-rc.1 || >=0.1.6-alpha.1 || >=0.1.7-alpha.1 || >=0.2.0-rc.1"
-     }
-    },
-    {
-     "version": "0.1.22",
-     "publishTimestamp": 1791886042,
      "source": {
       "type": "npm"
      },
@@ -1843,6 +2097,16 @@
    },
    "versions": [
     {
+     "version": "0.1.25",
+     "publishTimestamp": 1792137096,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.5-rc.1 || >=0.1.6-alpha.1 || >=0.1.7-alpha.1 || >=0.2.0-rc.1 >=0.2.0-rc.1"
+     }
+    },
+    {
      "version": "0.1.24",
      "publishTimestamp": 1791979509,
      "source": {
@@ -1855,16 +2119,6 @@
     {
      "version": "0.1.23",
      "publishTimestamp": 1791969824,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": ">=0.1.5-rc.1 || >=0.1.6-alpha.1 || >=0.1.7-alpha.1 || >=0.2.0-rc.1 >=0.2.0-rc.1"
-     }
-    },
-    {
-     "version": "0.1.22",
-     "publishTimestamp": 1791886251,
      "source": {
       "type": "npm"
      },
@@ -2029,6 +2283,16 @@
    },
    "versions": [
     {
+     "version": "0.1.25",
+     "publishTimestamp": 1792136997,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.5-rc.1 || >=0.1.6-alpha.1 || >=0.1.7-alpha.1 || >=0.2.0-rc.1"
+     }
+    },
+    {
      "version": "0.1.24",
      "publishTimestamp": 1791979494,
      "source": {
@@ -2041,16 +2305,6 @@
     {
      "version": "0.1.23",
      "publishTimestamp": 1791969754,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": ">=0.1.5-rc.1 || >=0.1.6-alpha.1 || >=0.1.7-alpha.1 || >=0.2.0-rc.1"
-     }
-    },
-    {
-     "version": "0.1.22",
-     "publishTimestamp": 1791886252,
      "source": {
       "type": "npm"
      },
@@ -2085,6 +2339,16 @@
    },
    "versions": [
     {
+     "version": "0.1.25",
+     "publishTimestamp": 1792137034,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.5-rc.1 || >=0.1.6-alpha.1 || >=0.1.7-alpha.1 || >=0.2.0-rc.1 >=0.2.0-rc.1 >=0.1.6-alpha.2 || >=0.1.7-alpha.1 || >=0.2.0-rc.1"
+     }
+    },
+    {
      "version": "0.1.24",
      "publishTimestamp": 1791979570,
      "source": {
@@ -2097,16 +2361,6 @@
     {
      "version": "0.1.23",
      "publishTimestamp": 1791969887,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": ">=0.1.5-rc.1 || >=0.1.6-alpha.1 || >=0.1.7-alpha.1 || >=0.2.0-rc.1 >=0.2.0-rc.1 >=0.1.6-alpha.2 || >=0.1.7-alpha.1 || >=0.2.0-rc.1"
-     }
-    },
-    {
-     "version": "0.1.22",
-     "publishTimestamp": 1791886248,
      "source": {
       "type": "npm"
      },
@@ -2143,6 +2397,16 @@
    },
    "versions": [
     {
+     "version": "4.0.1",
+     "publishTimestamp": 1792155212,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.2.0-rc.2"
+     }
+    },
+    {
      "version": "4.0.0",
      "publishTimestamp": 1792072231,
      "source": {
@@ -2155,16 +2419,6 @@
     {
      "version": "3.11.2",
      "publishTimestamp": 1789837546,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "^0.1.5-rc.2"
-     }
-    },
-    {
-     "version": "3.11.1",
-     "publishTimestamp": 1789730905,
      "source": {
       "type": "npm"
      },
@@ -2403,6 +2657,148 @@
    ]
   },
   {
+   "name": "dsh-proactive",
+   "title": "dsh-proactive",
+   "description": {
+    "en": "Host-level proactive wake-ups for DeepSeek Harness: the model schedules its own alarms (once, recurring interval, or cron, with optional random jitter), cold sessions are woken on time by session resume, model-initiated follow-ups are gated by quiet hours and a daily delivery budget, silent wake turns end with proactive_reclaim and fold out of model context as tombstones, declared schedule files g",
+    "zh": "为 DeepSeek Harness 提供 host 级主动唤醒：模型用 proactive_set 给自己设定闹钟（单次 / 循环间隔 / cron，支持 jitter 随机抖动），到点自动唤醒冷会话执行心跳、定时提醒与任务跟进；安静时段与每日投递预算约束模型自主跟进，静默唤醒以 proactive_reclaim 收尾并把唤醒上下文折叠为墓碑；声明式闹钟文件把 JSON 时间表幂等同步成 host 闹钟，min_idle_seconds 静默门让唤醒等会话空闲；自带 Web 管理面板（设置页节 + 会话页签，SSE 实时刷新）管理闹钟与唤醒历史——适合驱动 AI 陪伴、角色扮演（酒馆式人设）与 living agent 的心跳、日常安排和世界演算。"
+   },
+   "author": "john-walks-slow",
+   "homepage": "https://github.com/john-walks-slow/dsh-proactive/tree/main/packages/dsh-proactive#readme",
+   "repository": {
+    "url": "https://github.com/john-walks-slow/dsh-proactive"
+   },
+   "metadata": {
+    "category": "agi",
+    "keywords": [
+     "dsh",
+     "dsh-plugin",
+     "deepseek-harness",
+     "proactive",
+     "scheduler",
+     "agent",
+     "reminder",
+     "alarm",
+     "cron",
+     "timer",
+     "heartbeat",
+     "wake-up",
+     "automation",
+     "主动唤醒",
+     "定时任务",
+     "定时提醒",
+     "闹钟",
+     "提醒",
+     "定时器",
+     "心跳",
+     "计划任务",
+     "自动化",
+     "agi",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.3.1",
+     "publishTimestamp": 1791568774,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.2.0-rc.1"
+     }
+    },
+    {
+     "version": "0.3.0",
+     "publishTimestamp": 1791563545,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.2.0-rc.1"
+     }
+    },
+    {
+     "version": "0.2.4",
+     "publishTimestamp": 1791531525,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.2.0-rc.1"
+     }
+    }
+   ]
+  },
+  {
+   "name": "@zzerx/dsh-plugin-notes",
+   "title": "dsh-forge-studio#plugin-notes",
+   "description": {
+    "en": "Sticky-notes board for DeepSeek Harness: a sidebar entry opens a Markdown note panel with auto-save, colors, image paste and task-list rendering.",
+    "zh": "dsh 便签插件：侧栏入口打开 Markdown 便签面板，支持自动保存、颜色标签、粘贴图片与任务清单。"
+   },
+   "author": "0x7a7a6572",
+   "homepage": "https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-notes#readme",
+   "repository": {
+    "url": "https://github.com/0x7a7a6572/dsh-forge-studio"
+   },
+   "metadata": {
+    "category": "ui",
+    "keywords": [
+     "dsh",
+     "deepseek-harness",
+     "plugin",
+     "notes",
+     "sticky-notes",
+     "markdown",
+     "tiptap",
+     "task-board",
+     "ui",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.4.3",
+     "publishTimestamp": 1791438878,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.3.0-0"
+     }
+    },
+    {
+     "version": "0.4.2",
+     "publishTimestamp": 1790670925,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.3.0-0"
+     }
+    },
+    {
+     "version": "0.4.1",
+     "publishTimestamp": 1790558813,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.2.0-0"
+     }
+    }
+   ]
+  },
+  {
    "name": "@eternalloveone/dsh-palm",
    "title": "dsh-palm#dsh-palm",
    "description": {
@@ -2631,6 +3027,68 @@
      },
      "engines": {
       "dsh": ">=0.1.5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "@zzerx/dsh-plugin-memory",
+   "title": "dsh-forge-studio#plugin-memory",
+   "description": {
+    "en": "Cross-session memory for DeepSeek Harness: agents save, search and update user preferences, facts and project decisions; important entries are injected into later sessions, and a Settings section lists, edits, archives or deletes them.",
+    "zh": "dsh 跨会话记忆：agent 保存、检索并更新用户偏好、事实与项目决策，重要条目自动注入后续会话，设置面板可浏览、编辑、归档与删除。"
+   },
+   "author": "0x7a7a6572",
+   "homepage": "https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-memory#readme",
+   "repository": {
+    "url": "https://github.com/0x7a7a6572/dsh-forge-studio"
+   },
+   "metadata": {
+    "category": "memory",
+    "keywords": [
+     "dsh",
+     "deepseek-harness",
+     "plugin",
+     "memory",
+     "agent-memory",
+     "context",
+     "llm",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.4.3",
+     "publishTimestamp": 1791438865,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.3.0-0"
+     }
+    },
+    {
+     "version": "0.4.2",
+     "publishTimestamp": 1790671023,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.3.0-0"
+     }
+    },
+    {
+     "version": "0.4.1",
+     "publishTimestamp": 1790558814,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.2.0-0"
      }
     }
    ]
@@ -3481,6 +3939,16 @@
    },
    "versions": [
     {
+     "version": "0.2.0-rc.2.6",
+     "publishTimestamp": 1792140399,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
      "version": "0.2.0-rc.2.5",
      "publishTimestamp": 1792122991,
      "source": {
@@ -3493,16 +3961,6 @@
     {
      "version": "0.2.0-rc.2.4",
      "publishTimestamp": 1792120810,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "0.2.0-rc.2"
-     }
-    },
-    {
-     "version": "0.2.0-rc.2.3",
-     "publishTimestamp": 1792060290,
      "source": {
       "type": "npm"
      },
@@ -3569,35 +4027,21 @@
    ]
   },
   {
-   "name": "@kirkchinese/dsh-citeciter",
-   "title": "CiteCiter#citeciter",
+   "name": "@mtl-academic/dsh-patent",
+   "title": "Aurify#bundle-patent",
    "description": {
-    "en": "Select text in a committed DSH response to open an independent, persistent, read-only multi-turn Topic bound to source-session evidence and project files while the source Agent keeps running.",
-    "zh": "选中 DSH 已提交回复中的文字，开启独立、持久、只读的多轮 Topic；Topic 绑定来源会话证据与项目文件，来源 Agent 可继续运行。"
+    "en": "Patent-writing gatekeeper for dsh - screens the idea against Chinese prior art first, then runs five-party alignment interviews, eight-chapter disclosure drafting, figures and simulation runs, seven-dimension review and docx/PDF export. Skills work out of the box; the search, export and experiment tools come from a bundled Python MCP service that ships disabled - one line in ~/.dsh/patent-services",
+    "zh": "dsh 专利撰写把关人：动笔前先检索中国专利给出三档结论，再走五方对齐访谈、八章交底书、附图与仿真实验、七维审查与 docx/PDF 导出全流程。技能开箱即用；检索、导出与实验工具来自内置的 Python MCP 服务，默认关闭——在 ~/.dsh/patent-services.yaml 里开一行即启用，uvx 会从 PyPI 自动拉取。"
    },
-   "author": "kirkchinese",
-   "homepage": "https://github.com/kirkchinese/CiteCiter#readme",
+   "author": "ai-tools-mtl",
+   "homepage": "https://github.com/ai-tools-mtl/Aurify#readme",
    "repository": {
-    "url": "https://github.com/kirkchinese/citeciter"
+    "url": "https://github.com/ai-tools-mtl/aurify"
    },
    "metadata": {
-    "category": "session",
+    "category": "tools",
     "keywords": [
-     "deepseek-harness",
-     "dsh",
-     "dsh-plugin",
-     "cordis",
-     "citation",
-     "source-bound",
-     "verification",
-     "evidence",
-     "investigation",
-     "context-management",
-     "read-only",
-     "explanation",
-     "observer",
-     "topic",
-     "session",
+     "tools",
      "dsh.so-verified-l5"
     ],
     "labels": [
@@ -3607,33 +4051,33 @@
    },
    "versions": [
     {
-     "version": "0.9.0-beta.2",
-     "publishTimestamp": 1791995100,
+     "version": "0.1.6-alpha.7",
+     "publishTimestamp": 1791189622,
      "source": {
       "type": "npm"
      },
      "engines": {
-      "dsh": "0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2"
+      "dsh": "^0.1.5-rc.1 || ^0.1.6-alpha.1 || ^0.1.7-alpha.1"
      }
     },
     {
-     "version": "0.9.0-beta.1",
-     "publishTimestamp": 1791635786,
+     "version": "0.1.6-alpha.6",
+     "publishTimestamp": 1791181886,
      "source": {
       "type": "npm"
      },
      "engines": {
-      "dsh": "0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2"
+      "dsh": "^0.1.5-rc.1 || ^0.1.6-alpha.1 || ^0.1.7-alpha.1"
      }
     },
     {
-     "version": "0.9.0-alpha.3",
-     "publishTimestamp": 1790601121,
+     "version": "0.1.6-alpha.5",
+     "publishTimestamp": 1790762791,
      "source": {
       "type": "npm"
      },
      "engines": {
-      "dsh": "0.1.5-rc.2 || 0.1.7-rc.1 || 0.1.7-rc.2"
+      "dsh": "^0.1.5-rc.1 || ^0.1.6-alpha.1 || ^0.1.7-alpha.1"
      }
     }
    ]
@@ -4111,6 +4555,70 @@
    ]
   },
   {
+   "name": "@zzerx/dsh-plugin-daily-log",
+   "title": "dsh-forge-studio#plugin-daily-log",
+   "description": {
+    "en": "Work reports for DeepSeek Harness: gathers Git commits and local agent conversations (DeepSeek/Claude/Codex) and renders daily, weekly or monthly reports from your own templates; the agent tool is injected on demand.",
+    "zh": "dsh 工作报告：汇总 Git 提交与本地 agent 对话（DeepSeek/Claude/Codex），按自定义模板生成日报/周报/月报，agent 工具按需注入。"
+   },
+   "author": "0x7a7a6572",
+   "homepage": "https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-daily-log#readme",
+   "repository": {
+    "url": "https://github.com/0x7a7a6572/dsh-forge-studio"
+   },
+   "metadata": {
+    "category": "workflow",
+    "keywords": [
+     "dsh",
+     "deepseek-harness",
+     "plugin",
+     "daily-log",
+     "work-report",
+     "git",
+     "weekly-report",
+     "llm",
+     "workflow",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.4.3",
+     "publishTimestamp": 1792121691,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.3.0-0"
+     }
+    },
+    {
+     "version": "0.4.2",
+     "publishTimestamp": 1791438885,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.3.0-0"
+     }
+    },
+    {
+     "version": "0.4.1",
+     "publishTimestamp": 1790670829,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.3.0-0"
+     }
+    }
+   ]
+  },
+  {
    "name": "@tomowang/dsh-data-agent",
    "title": "dsh-data-agent",
    "description": {
@@ -4161,6 +4669,69 @@
       "type": "npm"
      },
      "engines": {}
+    }
+   ]
+  },
+  {
+   "name": "@zzerx/dsh-plugin-usage-billing",
+   "title": "dsh-forge-studio#plugin-usage-billing",
+   "description": {
+    "en": "Usage and cost view for DeepSeek Harness: aggregates real token usage from existing session logs, locks each cost at the price of its event time, and shows month and today spend against a budget from a sidebar card or an input-bar pill.",
+    "zh": "dsh 用量与费用视图：从既有会话日志聚合真实 token 用量，按事件发生时刻的价格写时锁定费用；侧栏卡片或输入框胶囊展示本月/今日花费与预算进度，设置页另有概览、趋势、明细三页。"
+   },
+   "author": "0x7a7a6572",
+   "homepage": "https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-usage-billing#readme",
+   "repository": {
+    "url": "https://github.com/0x7a7a6572/dsh-forge-studio"
+   },
+   "metadata": {
+    "category": "usage",
+    "keywords": [
+     "dsh",
+     "deepseek-harness",
+     "plugin",
+     "usage-billing",
+     "token-usage",
+     "billing",
+     "cost",
+     "usage",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "1.3.0",
+     "publishTimestamp": 1791439029,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.3.0-0"
+     }
+    },
+    {
+     "version": "1.2.1",
+     "publishTimestamp": 1790670920,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.3.0-0"
+     }
+    },
+    {
+     "version": "1.1.0",
+     "publishTimestamp": 1790157166,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.0 <0.2.0-0"
+     }
     }
    ]
   },
@@ -4787,6 +5358,61 @@
     {
      "version": "0.2.4",
      "publishTimestamp": 1789265066,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    }
+   ]
+  },
+  {
+   "name": "@zoria-lind/dsh-ecolink-adapter",
+   "title": "dsh-ecolink#adapter",
+   "description": {
+    "en": "DSH side of the dsh-ecolink memory ecosystem: bridges chat.deepseek.com and DeepSeek Harness through a browser extension that harvests DSM-format memory tags and injects recalled memories into web chats, a zero-dependency local service that writes a shared memory pool, and this adapter, which injects memories pre-step and offers /ecolink-push write-back; compression is transactional (staging pool ",
+    "zh": "dsh-ecolink 记忆生态的 dsh 侧组件：浏览器扩展收割 DSM 格式记忆标签并向网页对话注入回忆、零依赖本地服务写入共享记忆池、本 adapter 负责 pre-step 注入与 /ecolink-push 写回，共同打通 chat.deepseek.com 与 DSH；压缩为事务化双池（暂存提交/回滚）。"
+   },
+   "author": "zoria-lind",
+   "homepage": "https://github.com/Zoria-Lind/dsh-ecolink#readme",
+   "repository": {
+    "url": "https://github.com/zoria-lind/dsh-ecolink"
+   },
+   "metadata": {
+    "category": "memory",
+    "keywords": [
+     "dsh",
+     "memory",
+     "ecolink",
+     "deepseek",
+     "dsh-plugin",
+     "deepseek-harness",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.2.2",
+     "publishTimestamp": 1790951559,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
+    {
+     "version": "0.2.1",
+     "publishTimestamp": 1790842005,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
+    {
+     "version": "0.2.0",
+     "publishTimestamp": 1790318976,
      "source": {
       "type": "npm"
      },
@@ -5897,6 +6523,63 @@
    ]
   },
   {
+   "name": "novelcraft-dsh",
+   "title": "novelAssist-dsh#novelcraft-dsh",
+   "description": {
+    "en": "Long-form novel writing plugin: each book is a git repository of frontmatter files, with 39 DSH domain tools and a web writing UI. Deep import drafts candidates, AI adoption into canonical assets requires DSH approval, and deterministic continuity checks ship with a report-only benchmark. Independent open source (MIT), not an official DeepSeek product; requires Node >= 24.11.0 and currently target",
+    "zh": "长篇小说写作插件：每本书一个 git 仓库，当前 39 个 DSH 领域工具 + Web 写作台；深度导入产候选草稿、AI 采用类写入正式资产前必过审批、确定性连续性检查（报告型）。独立开源（MIT），非 DeepSeek 官方产品；需 Node ≥ 24.11.0，当前适配 DSH 0.1.2-rc.1。"
+   },
+   "author": "fenghuolinshan",
+   "homepage": "https://github.com/FengHuoLinShan/novelAssist-dsh#readme",
+   "repository": {
+    "url": "https://github.com/fenghuolinshan/novelassist-dsh"
+   },
+   "metadata": {
+    "category": "workflow",
+    "keywords": [
+     "dsh",
+     "dsh-plugin",
+     "dsh-bundle",
+     "deepseek-harness",
+     "novel",
+     "writing",
+     "novelcraft",
+     "workflow",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.3",
+     "publishTimestamp": 1789352982,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
+    {
+     "version": "0.1.2",
+     "publishTimestamp": 1788349437,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
+    {
+     "version": "0.1.1",
+     "publishTimestamp": 1788297318,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    }
+   ]
+  },
+  {
    "name": "dsh-brewreel",
    "title": "brewreel#deepseek-harness",
    "description": {
@@ -6611,6 +7294,58 @@
      },
      "engines": {
       "dsh": "^0.1.0-rc.6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "@ethanyoq/dsh-invoice-downloader",
+   "title": "Invoice-Downloader#dsh-invoice-downloader",
+   "description": {
+    "en": "Local IMAP invoice download, OCR, archive, and Excel reimbursement summaries for DeepSeek Harness.",
+    "zh": "面向 DeepSeek Harness 的本地 IMAP 发票下载、OCR 识别、归档与 Excel 报销汇总。"
+   },
+   "author": "ethanyoq",
+   "homepage": "https://github.com/EthanYoQ/Invoice-Downloader#deepseek-harness-plugin",
+   "repository": {
+    "url": "https://github.com/ethanyoq/invoice-downloader"
+   },
+   "metadata": {
+    "category": "tools",
+    "keywords": [
+     "deepseek-harness",
+     "dsh-plugin",
+     "invoice",
+     "imap",
+     "ocr",
+     "excel",
+     "tools",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.1",
+     "publishTimestamp": 1787462556,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.0-rc.5"
+     }
+    },
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1787392724,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.0-rc.5"
      }
     }
    ]
@@ -9680,59 +10415,6 @@
    ]
   },
   {
-   "name": "dsh-tool-see-image",
-   "title": "dsh-tool-see-image",
-   "description": {
-    "en": "Provides the see_image tool for DSH: send an image file to a configurable OpenAI-compatible vision model and relay its description back to a text-only model.",
-    "zh": "为 DSH 提供 see_image 工具：将图片文件发送到可配置的 OpenAI 兼容视觉模型，并把其描述回传给纯文本模型。"
-   },
-   "author": "gugu123a",
-   "homepage": "https://github.com/gugu123a/dsh-tool-see-image#readme",
-   "repository": {
-    "url": "https://github.com/gugu123a/dsh-tool-see-image"
-   },
-   "metadata": {
-    "category": "tools",
-    "keywords": [
-     "dsh",
-     "deepseek",
-     "vision",
-     "image",
-     "see-image",
-     "glm-4v",
-     "plugin",
-     "tools",
-     "dsh.so-verified-l5"
-    ],
-    "labels": [
-     "dsh.so-verified-l5"
-    ],
-    "sortKeys": {}
-   },
-   "versions": [
-    {
-     "version": "0.1.1",
-     "publishTimestamp": 1786694493,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "^0.1.0-rc.6"
-     }
-    },
-    {
-     "version": "0.1.0",
-     "publishTimestamp": 1786691062,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "^0.1.0-rc.6"
-     }
-    }
-   ]
-  },
-  {
    "name": "dsh-plugin-ai-switch",
    "title": "DeepSeek-Harness-Desktop-Ultra#dsh-plugin-ai-switch",
    "description": {
@@ -10814,6 +11496,16 @@
    },
    "versions": [
     {
+     "version": "0.2.0-rc.2.6",
+     "publishTimestamp": 1792140235,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
      "version": "0.2.0-rc.2.5",
      "publishTimestamp": 1792122895,
      "source": {
@@ -10826,16 +11518,6 @@
     {
      "version": "0.2.0-rc.2.4",
      "publishTimestamp": 1792120880,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "0.2.0-rc.2"
-     }
-    },
-    {
-     "version": "0.2.0-rc.2.3",
-     "publishTimestamp": 1792060944,
      "source": {
       "type": "npm"
      },
@@ -12451,59 +13133,6 @@
    ]
   },
   {
-   "name": "dsh-browser-crossplatform",
-   "title": "dsh-browser-crossplatform#bridge",
-   "description": {
-    "en": "Desktop half of the dsh browser extension: mounts a token-authenticated WebSocket bridge on the dsh webserver and exposes the browser_* tools that let the model read the tab you are on as text and act on it, with image recognition off until the user enables it.",
-    "zh": "dsh 浏览器扩展的桌面端一半：在 dsh 自带的 webserver 上挂一个带令牌校验的 WebSocket 桥，向模型暴露 browser_* 工具，让它读取并操作用户当前标签页，图片识别默认关闭、需用户自行开启。"
-   },
-   "author": "youbaiyun",
-   "homepage": "https://github.com/youbaiyun/dsh-browser-crossplatform#readme",
-   "repository": {
-    "url": "https://github.com/youbaiyun/dsh-browser-crossplatform"
-   },
-   "metadata": {
-    "category": "browser",
-    "keywords": [
-     "dsh",
-     "deepseek-harness",
-     "deepseek",
-     "browser-extension",
-     "cross-platform",
-     "multiplatform",
-     "windows",
-     "macos",
-     "linux",
-     "side-panel",
-     "ai-agent",
-     "browser-automation",
-     "websocket",
-     "dsh-plugin",
-     "dsh-market",
-     "plugin-manager",
-     "marketplace",
-     "browser",
-     "dsh.so-verified-l5"
-    ],
-    "labels": [
-     "dsh.so-verified-l5"
-    ],
-    "sortKeys": {}
-   },
-   "versions": [
-    {
-     "version": "0.38.5",
-     "publishTimestamp": 1791397904,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "0.2.0-rc.2"
-     }
-    }
-   ]
-  },
-  {
    "name": "dsh-plugins-a2a",
    "title": "dsh-plugins#dsh-a2a",
    "description": {
@@ -12542,6 +13171,42 @@
       "type": "npm"
      },
      "engines": {}
+    }
+   ]
+  },
+  {
+   "name": "dsh-hacker-news",
+   "title": "hn-cli#hacker-news",
+   "description": {
+    "en": "Hacker News tools for feeds, discussion threads, search, and user profiles.",
+    "zh": "用于获取 Hacker News 榜单、讨论串、搜索和用户资料的工具。"
+   },
+   "author": "heartleo",
+   "homepage": "https://github.com/heartleo/hn-cli#readme",
+   "repository": {
+    "url": "https://github.com/heartleo/hn-cli"
+   },
+   "metadata": {
+    "category": "tools",
+    "keywords": [
+     "tools",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1787043978,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.0-rc.1 <0.2.0-0"
+     }
     }
    ]
   },
@@ -12617,6 +13282,16 @@
     "sortKeys": {}
    },
    "versions": [
+    {
+     "version": "0.2.0",
+     "publishTimestamp": 1792142526,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.2.0-rc.2 <=0.2.1-alpha.2"
+     }
+    },
     {
      "version": "0.1.0",
      "publishTimestamp": 1788418650,
@@ -12710,6 +13385,62 @@
      },
      "engines": {
       "dsh": ">=0.1.0-rc.6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "dsh-quick-actions",
+   "title": "dsh-quick-actions#composer-quick-actions",
+   "description": {
+    "en": "Global Quick Actions beside every session-backed composer in DSH. One press sends a preset or your own saved text, with per-action send confirmation.",
+    "zh": "在 DSH 每个由会话支持的消息编辑器旁提供全局快捷动作。一键发送预置或你自己保存的文本，每个动作可单独设置发送确认。"
+   },
+   "author": "lovvvve",
+   "homepage": "https://github.com/lovvvve/dsh-quick-actions/tree/main/packages/composer-quick-actions#readme",
+   "repository": {
+    "url": "https://github.com/lovvvve/dsh-quick-actions"
+   },
+   "metadata": {
+    "category": "ui",
+    "keywords": [
+     "ui",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.2.0",
+     "publishTimestamp": 1790659426,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.2"
+     }
+    },
+    {
+     "version": "0.2.0-rc.3",
+     "publishTimestamp": 1790653829,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.2"
+     }
+    },
+    {
+     "version": "0.2.0-rc.2",
+     "publishTimestamp": 1790578917,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.7-alpha.2"
      }
     }
    ]
