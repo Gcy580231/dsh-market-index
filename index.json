@@ -175,7 +175,7 @@
     "category": "skill",
     "keywords": [
      "skill",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -230,7 +230,7 @@
     "category": "remote",
     "keywords": [
      "remote",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -285,7 +285,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -340,7 +340,7 @@
     "category": "git",
     "keywords": [
      "git",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -395,7 +395,7 @@
     "category": "remote",
     "keywords": [
      "remote",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -450,7 +450,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -506,7 +506,7 @@
     "category": "theme",
     "keywords": [
      "theme",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -568,7 +568,7 @@
      "context",
      "auto-recall",
      "auto-capture",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -624,7 +624,7 @@
     "category": "tools",
     "keywords": [
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -678,7 +678,7 @@
      "agent-skill",
      "architecture-diagram",
      "docs",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -724,7 +724,7 @@
      "browserskill",
      "browser-automation",
      "browser",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -784,7 +784,7 @@
      "memory",
      "plugin",
      "auto-memory",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -840,7 +840,7 @@
      "background",
      "wallpaper",
      "theme",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -890,7 +890,7 @@
     "category": "memory",
     "keywords": [
      "memory",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -953,7 +953,7 @@
      "rendering",
      "agent",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1008,7 +1008,7 @@
      "context",
      "canvas",
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1072,7 +1072,7 @@
      "uia",
      "desktop-automation",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1135,7 +1135,7 @@
      "llm-provider",
      "openai-responses",
      "model",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1201,7 +1201,7 @@
      "sandbox",
      "subagent",
      "security",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1265,7 +1265,7 @@
      "health-check",
      "diagnostics",
      "market",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1330,7 +1330,7 @@
      "knowledge-flywheel",
      "agent",
      "agi",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1388,7 +1388,7 @@
      "retrieval",
      "knowledge-base",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1438,7 +1438,7 @@
      "koocli",
      "hcloud",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1488,7 +1488,7 @@
     "category": "identity",
     "keywords": [
      "identity",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1496,6 +1496,16 @@
     "sortKeys": {}
    },
    "versions": [
+    {
+     "version": "0.2.0-rc.2.5",
+     "publishTimestamp": 1792122967,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
     {
      "version": "0.2.0-rc.2.4",
      "publishTimestamp": 1792120841,
@@ -1509,16 +1519,6 @@
     {
      "version": "0.2.0-rc.2.3",
      "publishTimestamp": 1792060424,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "0.2.0-rc.2"
-     }
-    },
-    {
-     "version": "0.2.0-rc.2.0",
-     "publishTimestamp": 1791455455,
      "source": {
       "type": "npm"
      },
@@ -1544,7 +1544,7 @@
     "category": "dev",
     "keywords": [
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1553,18 +1553,8 @@
    },
    "versions": [
     {
-     "version": "0.2.0-rc.2.4",
-     "publishTimestamp": 1792120849,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "catalog:dsh 0.2.0-rc.2"
-     }
-    },
-    {
-     "version": "0.2.0-rc.2.3",
-     "publishTimestamp": 1792060860,
+     "version": "0.2.0-rc.2.5",
+     "publishTimestamp": 1792123202,
      "source": {
       "type": "npm"
      },
@@ -1573,8 +1563,18 @@
      }
     },
     {
-     "version": "0.2.0-rc.2.0",
-     "publishTimestamp": 1791455463,
+     "version": "0.2.0-rc.2.4",
+     "publishTimestamp": 1792120849,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
+     "version": "0.2.0-rc.2.3",
+     "publishTimestamp": 1792060860,
      "source": {
       "type": "npm"
      },
@@ -1605,7 +1605,7 @@
      "mcp",
      "model-context-protocol",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1666,7 +1666,7 @@
      "notification",
      "toast",
      "notify",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1728,7 +1728,7 @@
      "status",
      "badge",
      "sidebar",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1778,7 +1778,7 @@
     "category": "session",
     "keywords": [
      "session",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1834,7 +1834,7 @@
     "category": "dev",
     "keywords": [
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1903,7 +1903,7 @@
      "notify",
      "remote-control",
      "remote",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -1964,7 +1964,7 @@
      "enterprise",
      "ai",
      "model",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2020,7 +2020,7 @@
     "category": "security",
     "keywords": [
      "security",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2076,7 +2076,7 @@
     "category": "remote",
     "keywords": [
      "remote",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2134,7 +2134,7 @@
      "dsh",
      "dsh-plugin",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2190,7 +2190,7 @@
     "category": "dev",
     "keywords": [
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2253,7 +2253,7 @@
      "business-context",
      "provenance",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2318,7 +2318,7 @@
      "dsh-hermes-link",
      "hermes-link",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2368,7 +2368,7 @@
     "category": "workflow",
     "keywords": [
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2425,7 +2425,7 @@
      "web-ui",
      "pwa",
      "plugin",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2485,7 +2485,7 @@
      "deepseek-harness",
      "cordis",
      "plugin",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2539,7 +2539,7 @@
      "plugin",
      "opencode",
      "usage",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2595,7 +2595,7 @@
     "category": "tools",
     "keywords": [
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2663,7 +2663,7 @@
      "cordis",
      "ai-agent",
      "notify",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2722,7 +2722,7 @@
      "pi-tui",
      "coding-agent",
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2789,7 +2789,7 @@
      "vlm",
      "qwen",
      "dashscope",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2851,7 +2851,7 @@
      "proxy",
      "tunnel",
      "remote",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2913,7 +2913,7 @@
      "voice",
      "speech-to-text",
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -2977,7 +2977,7 @@
      "file-conversion",
      "document-parsing",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3054,7 +3054,7 @@
      "remote-coding",
      "dsh-web-settings",
      "notify",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3111,7 +3111,7 @@
      "ai",
      "agent",
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3171,7 +3171,7 @@
      "dsh-plugin",
      "git",
      "worktree",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3232,7 +3232,7 @@
      "mcp",
      "baas",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3295,7 +3295,7 @@
      "cdp",
      "pi-control-chrome",
      "browser",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3356,7 +3356,7 @@
      "balance",
      "wallet",
      "usage",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3416,7 +3416,7 @@
      "tui",
      "terminal",
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3472,7 +3472,7 @@
     "category": "model",
     "keywords": [
      "model",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3480,6 +3480,16 @@
     "sortKeys": {}
    },
    "versions": [
+    {
+     "version": "0.2.0-rc.2.5",
+     "publishTimestamp": 1792122991,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
     {
      "version": "0.2.0-rc.2.4",
      "publishTimestamp": 1792120810,
@@ -3493,16 +3503,6 @@
     {
      "version": "0.2.0-rc.2.3",
      "publishTimestamp": 1792060290,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "0.2.0-rc.2"
-     }
-    },
-    {
-     "version": "0.2.0-rc.2.0",
-     "publishTimestamp": 1791455194,
      "source": {
       "type": "npm"
      },
@@ -3528,7 +3528,7 @@
     "category": "memory",
     "keywords": [
      "memory",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3598,7 +3598,7 @@
      "observer",
      "topic",
      "session",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3606,6 +3606,16 @@
     "sortKeys": {}
    },
    "versions": [
+    {
+     "version": "0.9.0-beta.2",
+     "publishTimestamp": 1791995100,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2 || 0.2.1-alpha.1 || 0.2.1-alpha.2"
+     }
+    },
     {
      "version": "0.9.0-beta.1",
      "publishTimestamp": 1791635786,
@@ -3619,16 +3629,6 @@
     {
      "version": "0.9.0-alpha.3",
      "publishTimestamp": 1790601121,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "0.1.5-rc.2 || 0.1.7-rc.1 || 0.1.7-rc.2"
-     }
-    },
-    {
-     "version": "0.9.0-alpha.2",
-     "publishTimestamp": 1790598432,
      "source": {
       "type": "npm"
      },
@@ -3667,7 +3667,7 @@
      "tooling",
      "integration",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3723,7 +3723,7 @@
      "skill",
      "isolated",
      "verification",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3783,7 +3783,7 @@
      "deepseek-harness",
      "dsh",
      "plugin",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3829,7 +3829,7 @@
     "category": "memory",
     "keywords": [
      "memory",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3895,7 +3895,7 @@
      "submodular",
      "benchmark",
      "session",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -3965,7 +3965,7 @@
      "typesafe-ai",
      "system-one-models",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4020,7 +4020,7 @@
      "schtasks",
      "mcp",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4076,7 +4076,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4084,6 +4084,14 @@
     "sortKeys": {}
    },
    "versions": [
+    {
+     "version": "0.4.0",
+     "publishTimestamp": 1791897557,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
     {
      "version": "0.3.3",
      "publishTimestamp": 1790763324,
@@ -4095,14 +4103,6 @@
     {
      "version": "0.3.2",
      "publishTimestamp": 1790653214,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {}
-    },
-    {
-     "version": "0.3.1",
-     "publishTimestamp": 1790652738,
      "source": {
       "type": "npm"
      },
@@ -4126,7 +4126,7 @@
     "category": "tools",
     "keywords": [
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4188,7 +4188,7 @@
      "volcengine",
      "llm-provider",
      "model",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4234,7 +4234,7 @@
      "pricing",
      "judge",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4296,7 +4296,7 @@
      "free-models",
      "model-provider",
      "model",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4330,7 +4330,7 @@
     "category": "fun",
     "keywords": [
      "fun",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4391,7 +4391,7 @@
      "session-title",
      "template",
      "session",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4456,7 +4456,7 @@
      "exa",
      "serper",
      "browser",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4521,7 +4521,7 @@
      "dashscope",
      "volcengine",
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4574,7 +4574,7 @@
      "dsh",
      "orbis",
      "remote",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4635,7 +4635,7 @@
      "plugin-store",
      "dsh",
      "market",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4693,7 +4693,7 @@
      "dependency-graph",
      "lint",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4756,7 +4756,7 @@
      "remote-development",
      "sftp",
      "remote",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4814,7 +4814,7 @@
      "semgrep",
      "sast",
      "security",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4876,7 +4876,7 @@
      "memory",
      "rag",
      "agent",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4942,7 +4942,7 @@
      "sigstore",
      "integrity",
      "npm-provenance",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4976,7 +4976,7 @@
     "category": "tools",
     "keywords": [
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -4984,6 +4984,14 @@
     "sortKeys": {}
    },
    "versions": [
+    {
+     "version": "3.0.11",
+     "publishTimestamp": 1791327883,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    },
     {
      "version": "3.0.10",
      "publishTimestamp": 1790877023,
@@ -4995,14 +5003,6 @@
     {
      "version": "3.0.8",
      "publishTimestamp": 1787989268,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {}
-    },
-    {
-     "version": "3.0.8-rc.0",
-     "publishTimestamp": 1787501123,
      "source": {
       "type": "npm"
      },
@@ -5031,7 +5031,7 @@
      "tavily",
      "mcp",
      "browser",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5092,7 +5092,7 @@
      "bundle",
      "meta",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5142,7 +5142,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5210,7 +5210,7 @@
      "glb",
      "fbx",
      "skill",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5269,7 +5269,7 @@
      "electronics",
      "eda",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5324,7 +5324,7 @@
      "firecrawl",
      "scraping",
      "browser",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5381,7 +5381,7 @@
      "context7",
      "documentation",
      "docs",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5442,7 +5442,7 @@
      "glm",
      "zhipu",
      "transcribe",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5502,7 +5502,7 @@
      "skin",
      "appearance",
      "web-ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5558,7 +5558,7 @@
     "category": "session",
     "keywords": [
      "session",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5613,7 +5613,7 @@
      "fireworks",
      "celebration",
      "fun",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5677,7 +5677,7 @@
      "local",
      "offline",
      "vision",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5731,7 +5731,7 @@
      "llm-router",
      "model-routing",
      "model",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5799,7 +5799,7 @@
      "openai-compatible",
      "speech-to-text",
      "vision",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5858,7 +5858,7 @@
      "glm",
      "zhipu",
      "ocr",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5917,7 +5917,7 @@
      "remotion",
      "video",
      "skill",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -5978,7 +5978,7 @@
      "dsh",
      "dsh-plugin",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6042,7 +6042,7 @@
      "deep-research",
      "search",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6101,7 +6101,7 @@
      "daemon",
      "completion",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6157,7 +6157,7 @@
      "failover",
      "resilience",
      "model",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6213,7 +6213,7 @@
     "category": "dev",
     "keywords": [
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6277,7 +6277,7 @@
      "single-cell",
      "spatial-transcriptomics",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6333,7 +6333,7 @@
     "category": "git",
     "keywords": [
      "git",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6375,7 +6375,7 @@
      "fetch",
      "search",
      "scraping",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6427,7 +6427,7 @@
      "liuhe",
      "code-index",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6477,7 +6477,7 @@
     "category": "remote",
     "keywords": [
      "remote",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6536,7 +6536,7 @@
      "managed-agents",
      "mcp",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6575,7 +6575,7 @@
      "multi-agent",
      "cordis",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6636,7 +6636,7 @@
      "static-analysis",
      "reachability",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6699,7 +6699,7 @@
      "agent client protocol",
      "vscode",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6750,7 +6750,7 @@
      "agent-memory",
      "engram",
      "cordis",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6800,7 +6800,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6842,7 +6842,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6903,7 +6903,7 @@
      "skill",
      "authoring",
      "writing",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6945,7 +6945,7 @@
     "category": "dev",
     "keywords": [
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -6984,7 +6984,7 @@
      "monitor",
      "plugin",
      "notify",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7039,7 +7039,7 @@
      "dsh",
      "dsh-plugin",
      "git",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7102,7 +7102,7 @@
      "notifications",
      "multi-agent",
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7161,7 +7161,7 @@
      "notification",
      "webhook",
      "notify",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7211,7 +7211,7 @@
     "category": "notify",
     "keywords": [
      "notify",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7270,7 +7270,7 @@
      "documents",
      "codemap",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7326,7 +7326,7 @@
      "undo",
      "rollback",
      "session",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7376,7 +7376,7 @@
     "category": "workflow",
     "keywords": [
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7438,7 +7438,7 @@
      "forwarding",
      "ds.hn",
      "remote",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7495,7 +7495,7 @@
      "subagent",
      "orchestration",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7551,7 +7551,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7598,7 +7598,7 @@
      "directed-fuzzing",
      "vulnerability-reproduction",
      "security",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7660,7 +7660,7 @@
      "agent",
      "feedback",
      "vision",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7716,7 +7716,7 @@
     "category": "memory",
     "keywords": [
      "memory",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7776,7 +7776,7 @@
      "plugin",
      "skill",
      "development",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7826,7 +7826,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7873,7 +7873,7 @@
      "dsh",
      "dsh-plugin",
      "skill",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7929,7 +7929,7 @@
      "spend",
      "cordis-plugin",
      "usage",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -7984,7 +7984,7 @@
      "dsh-plugin",
      "lookover",
      "vision",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8035,7 +8035,7 @@
      "web-search",
      "web-fetch",
      "browser",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8076,7 +8076,7 @@
      "recall",
      "dsh-plugin",
      "lookover",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8120,7 +8120,7 @@
     "category": "notify",
     "keywords": [
      "notify",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8163,7 +8163,7 @@
      "controller",
      "journal",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8217,7 +8217,7 @@
      "memorylake",
      "memory",
      "long-term-memory",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8260,7 +8260,7 @@
      "evidence",
      "stalegreen",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8302,7 +8302,7 @@
      "web-search",
      "web-fetch",
      "browser",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8367,7 +8367,7 @@
      "settings",
      "ui",
      "归档",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8413,7 +8413,7 @@
      "dsh-plugin",
      "cordis-plugin",
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8464,7 +8464,7 @@
      "dsh",
      "dsh-plugin",
      "skill",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8514,7 +8514,7 @@
      "gpt-sovits",
      "speech-synthesis",
      "ai-agent",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8555,7 +8555,7 @@
      "agents",
      "project-state",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8571,6 +8571,47 @@
      },
      "engines": {
       "dsh": "^0.1.1-rc.2"
+     }
+    }
+   ]
+  },
+  {
+   "name": "@kaiwangleo/dsh-xiwen",
+   "title": "xiwen#dsh-xiwen",
+   "description": {
+    "en": "Semantic-layer analytics tool that uses curated table, column and metric metadata with Qdrant and Elasticsearch recall to generate, validate and execute MySQL analytical queries through the Xiwen service.",
+    "zh": "基于人工维护的表、字段和指标语义元数据，结合 Qdrant 与 Elasticsearch 召回，通过析问服务生成、校验并执行 MySQL 分析查询。"
+   },
+   "author": "kaiwangleo",
+   "homepage": "https://github.com/kaiwangleo/xiwen/tree/master/plugins/dsh-xiwen#readme",
+   "repository": {
+    "url": "https://github.com/kaiwangleo/xiwen"
+   },
+   "metadata": {
+    "category": "tools",
+    "keywords": [
+     "deepseek-harness",
+     "dsh-plugin",
+     "semantic-layer",
+     "text-to-sql",
+     "data-agent",
+     "tools",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1787106599,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.1.0-rc.1 <0.2.0-0"
      }
     }
    ]
@@ -8607,7 +8648,7 @@
      "nbv",
      "channel-analysis",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8654,7 +8695,7 @@
      "dsh",
      "dsh-plugin",
      "memory",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8727,7 +8768,7 @@
      "nbv",
      "analyst",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8777,7 +8818,7 @@
      "image-analysis",
      "ocr",
      "glm-4.6v-flash",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8833,7 +8874,7 @@
     "category": "model",
     "keywords": [
      "model",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8873,7 +8914,7 @@
      "openai-compatible",
      "tokensmarket",
      "model",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8924,7 +8965,7 @@
      "local-llm",
      "agent-orchestration",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -8981,7 +9022,7 @@
      "uiux",
      "design-system",
      "commercial-ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9021,7 +9062,7 @@
      "puppeteer",
      "ui-automation",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9066,7 +9107,7 @@
      "scheduling",
      "automation",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9109,7 +9150,7 @@
      "cordis",
      "plugin",
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9166,7 +9207,7 @@
      "增额寿",
      "算衡",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9206,7 +9247,7 @@
      "session-mining",
      "self-evolution",
      "session",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9240,7 +9281,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9280,7 +9321,7 @@
      "skill-synthesis",
      "self-evolution",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9319,7 +9360,7 @@
      "mcp",
      "agent-tools",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9397,7 +9438,7 @@
      "cash-value",
      "irr",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9446,7 +9487,7 @@
     "category": "voice",
     "keywords": [
      "voice",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9507,7 +9548,7 @@
      "compatibility",
      "diagnostics",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9557,7 +9598,7 @@
     "category": "notify",
     "keywords": [
      "notify",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9620,7 +9661,7 @@
      "intelligence",
      "semiconductor",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9661,7 +9702,7 @@
      "glm-4v",
      "plugin",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9716,7 +9757,7 @@
      "route-proxy",
      "account-switcher",
      "model",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9755,7 +9796,7 @@
      "agent-preset",
      "orchestration",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9789,7 +9830,7 @@
     "category": "remote",
     "keywords": [
      "remote",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9838,7 +9879,7 @@
      "mcp",
      "skill",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9882,7 +9923,7 @@
      "clawtouch",
      "mcp",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -9937,7 +9978,7 @@
      "agent-sidecar",
      "monitoring",
      "session",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10002,7 +10043,7 @@
      "stop",
      "daemon",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10061,7 +10102,7 @@
      "deep-research",
      "workflow",
      "multi-agent",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10113,7 +10154,7 @@
      "cue-bank",
      "cross-session",
      "context",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10155,7 +10196,7 @@
      "markdown",
      "ai-agent",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10216,7 +10257,7 @@
      "web-search",
      "self-hosted",
      "browser",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10268,7 +10309,7 @@
      "autocomplete",
      "writing",
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10325,7 +10366,7 @@
      "combinatorial-optimization",
      "agent-tools",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10386,7 +10427,7 @@
      "dsh",
      "ai-workflow",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10440,7 +10481,7 @@
      "openpets",
      "coding-agent",
      "notify",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10498,7 +10539,7 @@
      "mcp",
      "model-context-protocol",
      "memory",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10549,7 +10590,7 @@
      "agent-debugging",
      "observability",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10566,6 +10607,40 @@
      "engines": {
       "dsh": "^0.1.1-rc.2"
      }
+    }
+   ]
+  },
+  {
+   "name": "@dennisrongo/dsh-theme",
+   "title": "dsh-plugins#dsh-theme",
+   "description": {
+    "en": "Twelve curated palettes, eight accent colours, a contrast slider and font/scale overrides for the DSH web UI, with an inlined first-paint script that prevents theme flash.",
+    "zh": "为 DSH Web 界面提供 12 套精选配色、8 种强调色、对比度滑块与字体/缩放覆盖，并内联首帧脚本防止主题闪烁。"
+   },
+   "author": "dennisrongo",
+   "homepage": "https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-theme#readme",
+   "repository": {
+    "url": "https://github.com/dennisrongo/dsh-plugins"
+   },
+   "metadata": {
+    "category": "theme",
+    "keywords": [
+     "theme",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1787979880,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
     }
    ]
   },
@@ -10591,7 +10666,7 @@
      "memory",
      "reflection",
      "hooks",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10632,7 +10707,7 @@
      "ppt",
      "slides",
      "docs",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10680,7 +10755,7 @@
      "trusted-plugin",
      "cordis",
      "usage",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10730,7 +10805,7 @@
     "category": "dev",
     "keywords": [
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10738,6 +10813,16 @@
     "sortKeys": {}
    },
    "versions": [
+    {
+     "version": "0.2.0-rc.2.5",
+     "publishTimestamp": 1792122895,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
     {
      "version": "0.2.0-rc.2.4",
      "publishTimestamp": 1792120880,
@@ -10751,16 +10836,6 @@
     {
      "version": "0.2.0-rc.2.3",
      "publishTimestamp": 1792060944,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": "0.2.0-rc.2"
-     }
-    },
-    {
-     "version": "0.2.0-rc.2.0",
-     "publishTimestamp": 1791455478,
      "source": {
       "type": "npm"
      },
@@ -10792,7 +10867,7 @@
      "mission-control",
      "jarvis",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10832,7 +10907,7 @@
      "background-removal",
      "image-processing",
      "docs",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10874,7 +10949,7 @@
      "index",
      "panel",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10924,7 +10999,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -10985,7 +11060,7 @@
      "通知",
      "桌面通知",
      "插件",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11031,7 +11106,7 @@
     "category": "memory",
     "keywords": [
      "memory",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11089,7 +11164,7 @@
      "context-injection",
      "mcp",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11135,7 +11210,7 @@
     "category": "dev",
     "keywords": [
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11162,6 +11237,134 @@
     {
      "version": "0.1.2-test.32817745992.1",
      "publishTimestamp": 1787639953,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    }
+   ]
+  },
+  {
+   "name": "@creait/dsh-tool-disclosure",
+   "title": "dsh-plugins#tool-disclosure",
+   "description": {
+    "en": "Progressive tool disclosure: a deferred tool group costs one catalog line instead of its full schemas until the model loads it with tool_search, with one switch per group in Settings and each group measured against the live registry.",
+    "zh": "渐进式工具披露：被延后的工具组在每次请求中只占目录里的一行，模型用 tool_search 加载后才拿到完整 schema；设置页为每个组提供一个开关，各组开销按当前工具注册表实测。"
+   },
+   "author": "creait-nl",
+   "homepage": "https://github.com/CREAIT-nl/dsh-plugins/tree/main/tool-disclosure#readme",
+   "repository": {
+    "url": "https://github.com/creait-nl/dsh-plugins"
+   },
+   "metadata": {
+    "category": "tools",
+    "keywords": [
+     "dsh",
+     "deepseek-harness",
+     "cordis",
+     "plugin",
+     "tools",
+     "context",
+     "progressive-disclosure",
+     "mcp",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1787577871,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.1.0-rc.7"
+     }
+    }
+   ]
+  },
+  {
+   "name": "@creait/dsh-to-english",
+   "title": "dsh-plugins#to-english",
+   "description": {
+    "en": "Rewrites the Chinese copy of a market-installed plugin into English using a model already configured in the harness — automatically when the plugin is installed, then live-reloaded. Each file is translated in one whole-file pass, validated by a real parser where one exists (node --check for JavaScript, JSON and YAML parsers otherwise) and handed back to the model with the error for up to three rep",
+    "zh": "用你已经配置好的模型，把从市场安装的插件里的中文文案改写成英文——安装时自动运行，随后热重载。每个文件整体翻译一遍，凡是有解析器的都会实际校验（JavaScript 用 node --check，其余用 JSON、YAML 解析器），失败时把报错交回模型，最多修复三次；超过 48 KB 或始终无法解析的文件，回退到按行区间翻译，逐行与原文做结构比对。触发短语与本地化表可以选择保留而不翻译，未改动的原文件保留在同目录下的 .zh.bak。"
+   },
+   "author": "creait-nl",
+   "homepage": "https://github.com/CREAIT-nl/dsh-plugins/tree/main/to-english#readme",
+   "repository": {
+    "url": "https://github.com/creait-nl/dsh-plugins"
+   },
+   "metadata": {
+    "category": "market",
+    "keywords": [
+     "dsh",
+     "deepseek-harness",
+     "cordis",
+     "plugin",
+     "translate",
+     "english",
+     "localization",
+     "market",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1787577869,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.1.0-rc.6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "@creait/dsh-tailnet-gateway",
+   "title": "dsh-plugins#tailnet-gateway",
+   "description": {
+    "en": "Identity-gated Tailscale access to the Web GUI with dsh still bound to loopback: a 127.0.0.1 proxy published by `tailscale serve` admits a request only when the Tailscale login it stamps is allowed, with an optional per-device allowlist, so the privileged /api methods behind the loopback check — Settings, Models, Plugins — answer without dsh being told to trust a remote host.",
+    "zh": "在 dsh 仍绑定回环地址的前提下，为 Web 界面提供基于身份的 Tailscale 访问：由 `tailscale serve` 对外发布的 127.0.0.1 代理，仅当其标记的 Tailscale 登录账号在允许列表内时才放行请求，并可另按设备白名单限制；这样受回环检查保护的特权 /api 方法（设置、模型、插件）无需让 dsh 信任远程主机即可正常响应。"
+   },
+   "author": "creait-nl",
+   "homepage": "https://github.com/CREAIT-nl/dsh-plugins/tree/main/tailnet-gateway#readme",
+   "repository": {
+    "url": "https://github.com/creait-nl/dsh-plugins"
+   },
+   "metadata": {
+    "category": "remote",
+    "keywords": [
+     "dsh",
+     "deepseek-harness",
+     "cordis",
+     "plugin",
+     "tailscale",
+     "tailnet",
+     "gateway",
+     "remote-access",
+     "remote",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1787733717,
      "source": {
       "type": "npm"
      },
@@ -11198,7 +11401,7 @@
      "apk",
      "hap",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11258,7 +11461,7 @@
      "data-minimisation",
      "tool-result",
      "security",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11309,7 +11512,7 @@
      "redaction",
      "tui",
      "security",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11340,6 +11543,49 @@
    ]
   },
   {
+   "name": "@creait/dsh-web-fetch",
+   "title": "dsh-plugins#web-fetch",
+   "description": {
+    "en": "A guarded local fetch provider for the ctx.web seam — the backend dsh does not ship for its own web_fetch tool. Every redirect hop is re-resolved and checked against the non-routable ranges, with a streamed size cap and a content-type allowlist.",
+    "zh": "ctx.web 接口的本地受控抓取提供方——dsh 自带完整的 web_fetch 工具，却没有随附后端。每一跳重定向都会重新解析并对照非公网地址段校验，另有流式大小上限与内容类型白名单。"
+   },
+   "author": "creait-nl",
+   "homepage": "https://github.com/CREAIT-nl/dsh-plugins/tree/main/web-fetch#readme",
+   "repository": {
+    "url": "https://github.com/creait-nl/dsh-plugins"
+   },
+   "metadata": {
+    "category": "browser",
+    "keywords": [
+     "dsh",
+     "deepseek-harness",
+     "cordis",
+     "plugin",
+     "web-fetch",
+     "ssrf",
+     "self-hosted",
+     "browser",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1787577873,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.1.0-rc.7"
+     }
+    }
+   ]
+  },
+  {
    "name": "dsh-repair",
    "title": "dsh-repair",
    "description": {
@@ -11361,7 +11607,7 @@
      "repair",
      "diagnostics",
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11403,7 +11649,7 @@
      "codeg-plus",
      "sessions",
      "session",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11418,6 +11664,50 @@
       "type": "npm"
      },
      "engines": {}
+    }
+   ]
+  },
+  {
+   "name": "@creait/dsh-think-level",
+   "title": "dsh-plugins#think-level",
+   "description": {
+    "en": "A thinking level stored per provider and model, so reasoning effort outlives the session it was set in and also reaches subagents, which dsh never asks. The in-session picker still wins, and a model with no row keeps its provider default.",
+    "zh": "按提供方与模型保存思考等级：推理强度不再只属于设置它的那次会话，还会应用到 dsh 从不询问的子代理。会话内的手动选择依然优先，没有配置的模型保持提供方默认值。"
+   },
+   "author": "creait-nl",
+   "homepage": "https://github.com/CREAIT-nl/dsh-plugins/tree/main/think-level#readme",
+   "repository": {
+    "url": "https://github.com/creait-nl/dsh-plugins"
+   },
+   "metadata": {
+    "category": "model",
+    "keywords": [
+     "dsh",
+     "deepseek-harness",
+     "cordis",
+     "plugin",
+     "reasoning",
+     "reasoning-effort",
+     "thinking",
+     "model-defaults",
+     "model",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1787577866,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.1.0-rc.6"
+     }
     }
    ]
   },
@@ -11445,7 +11735,7 @@
      "agent",
      "tasks",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11479,7 +11769,7 @@
     "category": "dev",
     "keywords": [
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11537,7 +11827,7 @@
      "document-generation",
      "guard",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11581,7 +11871,7 @@
      "document-generation",
      "session-protocol",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11627,7 +11917,7 @@
      "issues",
      "pull-requests",
      "git",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11661,7 +11951,7 @@
     "category": "theme",
     "keywords": [
      "theme",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11711,7 +12001,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11726,6 +12016,42 @@
       "type": "npm"
      },
      "engines": {}
+    }
+   ]
+  },
+  {
+   "name": "@vlln/plugin-console",
+   "title": "plugin-registry#console",
+   "description": {
+    "en": "Ecosystem infrastructure: a thin browser console for managing official repository plugins (zero patches) plus a make-dsh-plugin skill for guided plugin development.",
+    "zh": "插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。"
+   },
+   "author": "vlln",
+   "homepage": "https://github.com/vlln/plugin-registry#readme",
+   "repository": {
+    "url": "https://github.com/vlln/plugin-registry"
+   },
+   "metadata": {
+    "category": "market",
+    "keywords": [
+     "market",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1787158055,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.1.0-rc.5"
+     }
     }
    ]
   },
@@ -11745,7 +12071,7 @@
     "category": "skill",
     "keywords": [
      "skill",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11787,7 +12113,7 @@
     "category": "docs",
     "keywords": [
      "docs",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11850,7 +12176,7 @@
      "rate-limit",
      "subagent",
      "model",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11896,7 +12222,7 @@
     "category": "tools",
     "keywords": [
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11932,7 +12258,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -11966,7 +12292,7 @@
     "category": "dev",
     "keywords": [
      "dev",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -12030,7 +12356,7 @@
      "qrcode",
      "cloudflare-tunnel",
      "remote",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -12064,7 +12390,7 @@
     "category": "ui",
     "keywords": [
      "ui",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -12098,7 +12424,7 @@
     "category": "tools",
     "keywords": [
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -12157,7 +12483,7 @@
      "plugin-manager",
      "marketplace",
      "browser",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -12193,7 +12519,7 @@
     "category": "tools",
     "keywords": [
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -12235,7 +12561,7 @@
     "category": "tools",
     "keywords": [
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -12254,6 +12580,46 @@
     {
      "version": "1.0.0",
      "publishTimestamp": 1787208080,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {}
+    }
+   ]
+  },
+  {
+   "name": "@avernet-plugin/deepseek-harness-channel-bcn",
+   "title": "Avernet#deepseek-harness-channel-bcn",
+   "description": {
+    "en": "Connects DeepSeek Harness to Avernet's Bot Collaboration Network over WebSocket V2, with automatic onboarding, isolated agent sessions, tool-call events, and multi-bot routing tools.",
+    "zh": "通过 WebSocket V2 将 DeepSeek Harness 接入 Avernet Bot 协作网络，支持自动注册、Agent 会话隔离、工具调用事件和多 Bot 路由工具。"
+   },
+   "author": "inclusionai",
+   "homepage": "https://github.com/inclusionAI/Avernet#readme",
+   "repository": {
+    "url": "https://github.com/inclusionai/avernet"
+   },
+   "metadata": {
+    "category": "notify",
+    "keywords": [
+     "deepseek-harness",
+     "dsh-plugin",
+     "cordis",
+     "bcn",
+     "bcs",
+     "multi-agent",
+     "notify",
+     "dsh.so-verified-l5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1788418650,
      "source": {
       "type": "npm"
      },
@@ -12281,7 +12647,7 @@
      "prompt-optimizer",
      "prompt-enhancement",
      "tools",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -12328,7 +12694,7 @@
      "待办",
      "提醒",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -12376,7 +12742,7 @@
      "论文",
      "实证分析",
      "workflow",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
@@ -12424,7 +12790,7 @@
      "逆向",
      "反编译",
      "security",
-     "dsh.so-verified-L5"
+     "dsh.so-verified-l5"
     ],
     "labels": [
      "dsh.so-verified-l5"
