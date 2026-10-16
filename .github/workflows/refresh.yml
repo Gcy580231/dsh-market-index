@@ -9,6 +9,7 @@ on:
     paths:
       - 'generate.mjs'
       - '.github/workflows/refresh.yml'
+      - 'package.json'
 
 permissions:
   contents: write
@@ -26,6 +27,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+
+      # 官方校验器：生成器用它的 parseMarketIndex 做解析驱动自愈，
+      # 保证写出的索引在真实宿主里一定能通过（否则整份被拒 → 发现页空白）。
+      - name: Install official index validator
+        run: npm install --no-audit --no-fund
 
       - name: Generate index
         run: node generate.mjs index.json
