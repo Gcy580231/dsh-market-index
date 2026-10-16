@@ -14,13 +14,10 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: refresh-index
-  cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -29,12 +26,10 @@ jobs:
           node-version: '22'
 
       # 官方校验器：生成器用它的 parseMarketIndex 做解析驱动自愈。
-      # 装不上不是致命错误 —— 生成器会退回结构自检（净化规则仍然生效）。
+      # 装不上/卡住都不是致命错误 —— 生成器会退回结构自检（净化规则仍然生效）。
       - name: Install official index validator
         continue-on-error: true
-        run: |
-          npm install --no-audit --no-fund || echo "validator install failed; generator will self-check structurally"
-          node -e "import('@deepseek-ai/dsh-plugin-market-index').then(m=>console.log('validator present:',typeof m.parseMarketIndex)).catch(e=>console.log('validator absent:',e.code||e.message))"
+        run: timeout 150 npm install --no-audit --no-fund || echo "validator install skipped"
 
       - name: Generate index
         run: node generate.mjs index.json
@@ -63,7 +58,7 @@ jobs:
         if: always()
         run: |
           if [ -f index.json ]; then
-            node -e 'const i=require("./index.json");console.log(`plugins=${i.plugins.length} versions=${i.plugins.reduce((a,p)=>a+p.versions.length,0)} categories=${Object.keys(i.metadata.categories).length}`)' >> "$GITHUB_STEP_SUMMARY"
+            node -e 'const i=require("./index.json");console.log(`plugins=${i.plugins.length} versions=${i.plugins.reduce((a,p)=>a+p.versions.length,0)} categories=${Object.keys(i.metadata.categories).length})' >> "$GITHUB_STEP_SUMMARY"
           else
             echo "index.json not produced — generation failed" >> "$GITHUB_STEP_SUMMARY"
           fi
