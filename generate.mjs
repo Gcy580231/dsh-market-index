@@ -15,6 +15,7 @@
  *     所以这里先用保守规则净化范围，再用官方 `parseMarketIndex` 做**解析驱动的自愈**：
  *     按报错路径回退（删掉出问题的 engines.dsh / 丢掉出问题的插件）并重试。
  *   * 发现页的分类筛选按 `plugin.metadata.category` 判定，只塞 keywords 会让分类点进去是空的。
+ *   * registry 顺序：npmjs 在前、npmmirror 兜底 —— runner 上 npmmirror 未必稳，本机反之更快。
  *
  * 用法: node generate.mjs [输出路径，默认 index.json]
  * 环境: DSH_INDEX_MAX_PLUGINS（默认 400）、DSH_INDEX_VERSIONS_PER_PLUGIN（默认 3）
@@ -124,6 +125,19 @@ function dshRange(manifest) {
   const uniq = [...new Set(ranges)]
   if (!uniq.length || uniq.every(r => r === '*')) return null
   return uniq.join(' ') // npm semver：空格即合取
+}
+
+/** npm 元数据的 registry 优先级：npmjs 在前，npmmirror 兜底
+ *  （本机反之更快，但 GitHub runner 上 npmmirror 未必稳，所以两边都能跑）。 */
+const REGISTRIES = [NPMJS, NPMMIRROR]
+
+/** 取单个包的元数据；两个 registry 都失败返回 null（调用方计入失败数）。 */
+async function packument(name) {
+  for (const base of REGISTRIES) {
+    try { return await getJson(`${base}/${encodeURIComponent(name)}`, { timeoutMs: 20_000, tries: 2 }) }
+    catch { /* try next registry */ }
+  }
+  return null
 }
 
 function versionsFromPackument(doc) {
@@ -250,16 +264,28 @@ async function main() {
   log(`join: ${candidates.length} candidates, taking ${picked.length}`)
 
   log('fetching real npm publish times …')
-  let done = 0
+  let done = 0, failed = 0
+  const failureSamples = []
   const fetched = await mapPool(picked, 8, async (cand) => {
-    const doc = await getJson(`${NPMMIRROR}/${encodeURIComponent(cand.npm)}`, { timeoutMs: 20_000, tries: 2 })
-    const versions = versionsFromPackument(doc)
+    const doc = await packument(cand.npm)
+    const versions = doc ? versionsFromPackument(doc) : []
     done++
+    if (!doc) {
+      failed++
+      if (failureSamples.length < 5) failureSamples.push(cand.npm)
+    }
     if (done % 50 === 0) log(`  …${done}/${picked.length}`)
     return versions.length ? { cand, versions } : null
   })
+  if (failed) log(`packument fetch failures: ${failed}/${picked.length} (e.g. ${failureSamples.join(', ')})`)
 
   const kept = fetched.filter(Boolean)
+  if (!kept.length) {
+    log(`FATAL: 0 plugins survived the join — upstream unreachable? (registries tried: ${REGISTRIES.join(', ')})`)
+    process.exitCode = 1
+    return
+  }
+
   const categories = {}
   const catalogCategories = catalog.doc.categories ?? {}
   for (const { cand, versions } of kept) {
