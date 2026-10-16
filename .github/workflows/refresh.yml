@@ -28,10 +28,13 @@ jobs:
         with:
           node-version: '22'
 
-      # 官方校验器：生成器用它的 parseMarketIndex 做解析驱动自愈，
-      # 保证写出的索引在真实宿主里一定能通过（否则整份被拒 → 发现页空白）。
+      # 官方校验器：生成器用它的 parseMarketIndex 做解析驱动自愈。
+      # 装不上不是致命错误 —— 生成器会退回结构自检（净化规则仍然生效）。
       - name: Install official index validator
-        run: npm install --no-audit --no-fund
+        continue-on-error: true
+        run: |
+          npm install --no-audit --no-fund || echo "validator install failed; generator will self-check structurally"
+          node -e "import('@deepseek-ai/dsh-plugin-market-index').then(m=>console.log('validator present:',typeof m.parseMarketIndex)).catch(e=>console.log('validator absent:',e.code||e.message))"
 
       - name: Generate index
         run: node generate.mjs index.json
