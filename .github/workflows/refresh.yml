@@ -58,7 +58,7 @@ jobs:
         if: always()
         run: |
           if [ -f index.json ]; then
-            node -e 'const i=require("./index.json");console.log(`plugins=${i.plugins.length} versions=${i.plugins.reduce((a,p)=>a+p.versions.length,0)} categories=${Object.keys(i.metadata.categories).length})' >> "$GITHUB_STEP_SUMMARY"
+            node -e 'const i=require("./index.json");console.log("plugins="+i.plugins.length+" versions="+i.plugins.reduce((a,p)=>a+p.versions.length,0)+" categories="+Object.keys(i.metadata.categories).length)' >> "$GITHUB_STEP_SUMMARY"
           else
             echo "index.json not produced — generation failed" >> "$GITHUB_STEP_SUMMARY"
           fi
