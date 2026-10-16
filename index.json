@@ -94,6 +94,12 @@
      "zh": "开发与运行时"
     }
    },
+   "identity": {
+    "title": {
+     "en": "Identity & Communication",
+     "zh": "身份与通信"
+    }
+   },
    "notify": {
     "title": {
      "en": "Notifications & Integrations",
@@ -166,6 +172,7 @@
     "url": "https://github.com/zhu1090093659/dsh-web"
    },
    "metadata": {
+    "category": "skill",
     "keywords": [
      "skill",
      "dsh.so-verified-L5"
@@ -220,6 +227,7 @@
     "url": "https://github.com/zhu1090093659/dsh-web"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "remote",
      "dsh.so-verified-L5"
@@ -274,6 +282,7 @@
     "url": "https://github.com/zhu1090093659/dsh-web"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -328,6 +337,7 @@
     "url": "https://github.com/zhu1090093659/dsh-web"
    },
    "metadata": {
+    "category": "git",
     "keywords": [
      "git",
      "dsh.so-verified-L5"
@@ -382,6 +392,7 @@
     "url": "https://github.com/zhu1090093659/dsh-web"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "remote",
      "dsh.so-verified-L5"
@@ -436,6 +447,7 @@
     "url": "https://github.com/zhu1090093659/dsh-web"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -491,6 +503,7 @@
     "url": "https://github.com/small-tailqwq/dsh-deep-whale"
    },
    "metadata": {
+    "category": "theme",
     "keywords": [
      "theme",
      "dsh.so-verified-L5"
@@ -546,6 +559,7 @@
     "url": "https://github.com/volcengine/openviking"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -607,6 +621,7 @@
     "url": "https://github.com/roarpeng/graphflow"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "tools",
      "dsh.so-verified-L5"
@@ -656,6 +671,7 @@
     "url": "https://github.com/tt-a1i/archify"
    },
    "metadata": {
+    "category": "docs",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -701,6 +717,7 @@
     "url": "https://github.com/tencent/browserskill"
    },
    "metadata": {
+    "category": "browser",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -760,6 +777,7 @@
     "url": "https://github.com/aik358/dsh-auto-memory"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -813,6 +831,7 @@
     "url": "https://github.com/starsstreaming/beauticode"
    },
    "metadata": {
+    "category": "theme",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -868,6 +887,7 @@
     "url": "https://github.com/slow-stack/mneme"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "memory",
      "dsh.so-verified-L5"
@@ -923,6 +943,7 @@
     "url": "https://github.com/pearjelly/deep-blend"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -979,6 +1000,7 @@
     "url": "https://github.com/chenxiachan/thoughtdag"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -1039,6 +1061,7 @@
     "url": "https://github.com/yu-tao-li/dsh-computer-use-win"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -1100,6 +1123,7 @@
     "url": "https://github.com/nickhelion/dsh-plugins"
    },
    "metadata": {
+    "category": "model",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -1164,6 +1188,7 @@
     "url": "https://github.com/perrylink/dsh-auto-review"
    },
    "metadata": {
+    "category": "security",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -1229,6 +1254,7 @@
     "url": "https://github.com/f-infinite-z/dsh-plugin-ops"
    },
    "metadata": {
+    "category": "market",
     "keywords": [
      "deepseek",
      "harness",
@@ -1286,6 +1312,7 @@
     "url": "https://github.com/kenz1117/dsh-engram"
    },
    "metadata": {
+    "category": "agi",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -1350,6 +1377,7 @@
     "url": "https://github.com/tencent/weknora"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -1391,6 +1419,7 @@
     "url": "https://github.com/huaweicloud/huaweicloud-devkit"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "huaweicloud",
      "huawei-cloud",
@@ -1444,6 +1473,118 @@
    ]
   },
   {
+   "name": "@tnnevol/dsh-codex-auth",
+   "title": "fnos-dsh#dsh-codex-auth-plugin",
+   "description": {
+    "en": "ChatGPT account sign-in for DeepSeek Harness through a Codex browser OAuth flow with no API key and no workspace selection: subscribes the login to pi-ai's Codex provider, lets you set the global default Codex model and reasoning effort for new sessions, refreshes the model list from the signed-in account's own catalog endpoint, and shows the five-hour and weekly usage windows in the composer.",
+    "zh": "为 DeepSeek Harness 提供 ChatGPT 账号登录：走 Codex 浏览器 OAuth，无需 API Key、无需选择工作空间；把登录结果接到 pi-ai 的 Codex provider，可设置新会话默认的 Codex 模型与思考强度，并按账号自己的目录接口刷新模型列表，在输入区展示 5 小时与每周用量窗口。"
+   },
+   "author": "fnosp",
+   "homepage": "https://fndsh-doc.tnnevol.cn/plugins/dsh-codex-auth",
+   "repository": {
+    "url": "https://github.com/fnosp/fnos-dsh"
+   },
+   "metadata": {
+    "category": "identity",
+    "keywords": [
+     "identity",
+     "dsh.so-verified-L5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.2.0-rc.2.4",
+     "publishTimestamp": 1792120841,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
+     "version": "0.2.0-rc.2.3",
+     "publishTimestamp": 1792060424,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
+     "version": "0.2.0-rc.2.0",
+     "publishTimestamp": 1791455455,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    }
+   ]
+  },
+  {
+   "name": "@tnnevol/dsh-fnos",
+   "title": "fnos-dsh#dsh-fnos-plugin",
+   "description": {
+    "en": "fnOS 飞牛 NAS integration for DeepSeek Harness, working through the fnOS browser SDK when the Web UI runs inside an fnOS app frame: follows the NAS theme while DSH is set to system preference, lists and revokes authorized NAS directory grants in Settings, opens files and links in the matching fnOS app, and syncs the DSH page title to the fnOS app window. Install from npm with `dsh plugin --profile w",
+    "zh": "把 DeepSeek Harness 接进飞牛 fnOS：DSH 界面跑在 fnOS 应用框架里时通过 fnOS 浏览器 SDK 工作——DSH 设为跟随系统时读取并跟随 NAS 主题，在设置里列出和取消已授权的 NAS 目录，把文件与链接交给对应的 fnOS 应用打开，并把 DSH 页面标题同步到 fnOS 应用窗口。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-fnos`。"
+   },
+   "author": "fnosp",
+   "homepage": "https://fndsh-doc.tnnevol.cn/plugins/dsh-fnos",
+   "repository": {
+    "url": "https://github.com/fnosp/fnos-dsh"
+   },
+   "metadata": {
+    "category": "dev",
+    "keywords": [
+     "dev",
+     "dsh.so-verified-L5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.2.0-rc.2.4",
+     "publishTimestamp": 1792120849,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "catalog:dsh 0.2.0-rc.2"
+     }
+    },
+    {
+     "version": "0.2.0-rc.2.3",
+     "publishTimestamp": 1792060860,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
+     "version": "0.2.0-rc.2.0",
+     "publishTimestamp": 1791455463,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    }
+   ]
+  },
+  {
    "name": "@wingsky-1/dsh-mcp-manager",
    "title": "dsh-plugin-hub#packages/dsh-mcp-manager",
    "description": {
@@ -1455,6 +1596,7 @@
     "url": "https://github.com/wingsky-1/dsh-plugin-hub"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -1515,6 +1657,7 @@
     "url": "https://github.com/wingsky-1/dsh-plugin-hub"
    },
    "metadata": {
+    "category": "notify",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -1576,6 +1719,7 @@
     "url": "https://github.com/kevin-mcisaac/dsh-workspace-git-badge"
    },
    "metadata": {
+    "category": "git",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -1631,6 +1775,7 @@
     "url": "https://github.com/tgyd-helige/dsh-plugins"
    },
    "metadata": {
+    "category": "session",
     "keywords": [
      "session",
      "dsh.so-verified-L5"
@@ -1686,6 +1831,7 @@
     "url": "https://github.com/tgyd-helige/dsh-plugins"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dev",
      "dsh.so-verified-L5"
@@ -1741,6 +1887,7 @@
     "url": "https://github.com/perrylink/dsh-reach"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -1809,6 +1956,7 @@
     "url": "https://github.com/boe1900/owndsh"
    },
    "metadata": {
+    "category": "model",
     "keywords": [
      "deepseek",
      "harness",
@@ -1869,6 +2017,7 @@
     "url": "https://github.com/tgyd-helige/dsh-plugins"
    },
    "metadata": {
+    "category": "security",
     "keywords": [
      "security",
      "dsh.so-verified-L5"
@@ -1924,6 +2073,7 @@
     "url": "https://github.com/tgyd-helige/dsh-plugins"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "remote",
      "dsh.so-verified-L5"
@@ -1979,6 +2129,7 @@
     "url": "https://github.com/btspoony/mstar-harness"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -2036,6 +2187,7 @@
     "url": "https://github.com/kuun993/dsh-loop-engine"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dev",
      "dsh.so-verified-L5"
@@ -2091,6 +2243,7 @@
     "url": "https://github.com/openbkn-ai/bkn-dsh"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -2153,6 +2306,7 @@
     "url": "https://github.com/tianbuyu-wwx/dsh-hermes-link"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dsh",
      "cordis",
@@ -2211,6 +2365,7 @@
     "url": "https://github.com/orziz/odai"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "workflow",
      "dsh.so-verified-L5"
@@ -2259,6 +2414,7 @@
     "url": "https://github.com/eternalloveone/dsh-palm"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -2322,6 +2478,7 @@
     "url": "https://github.com/zilliztech/memsearch"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "memsearch",
      "memory",
@@ -2374,6 +2531,7 @@
     "url": "https://github.com/wingsky-1/dsh-plugin-hub"
    },
    "metadata": {
+    "category": "usage",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -2434,6 +2592,7 @@
     "url": "https://github.com/ottermind/sqlx"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "tools",
      "dsh.so-verified-L5"
@@ -2489,6 +2648,7 @@
     "url": "https://github.com/omdsh-dev/dsh-lark"
    },
    "metadata": {
+    "category": "notify",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -2550,6 +2710,7 @@
     "url": "https://github.com/ephemeral-ai-lab/mayfly"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -2614,6 +2775,7 @@
     "url": "https://github.com/flyvhidbwo/dsh-vision-proxy"
    },
    "metadata": {
+    "category": "vision",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -2679,6 +2841,7 @@
     "url": "https://github.com/wingsky-1/dsh-plugin-hub"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -2741,6 +2904,7 @@
     "url": "https://github.com/diag5/dsh-better-input"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -2802,6 +2966,7 @@
     "url": "https://github.com/tianbuyu-wwx/dsh-formatforge"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -2865,6 +3030,7 @@
     "url": "https://github.com/plutokeating/dsh-lark-bot"
    },
    "metadata": {
+    "category": "notify",
     "keywords": [
      "dsh",
      "deepseek",
@@ -2935,6 +3101,7 @@
     "url": "https://github.com/blackman99/codsh"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "cli",
      "coding-agent",
@@ -2997,6 +3164,7 @@
     "url": "https://github.com/cerbur/clutch-dsh"
    },
    "metadata": {
+    "category": "git",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -3056,6 +3224,7 @@
     "url": "https://github.com/tencentcloudbase/cloudbase-ai-toolkit"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -3110,6 +3279,7 @@
     "url": "https://github.com/lyd123qw2008/pi-control-chrome"
    },
    "metadata": {
+    "category": "browser",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -3178,6 +3348,7 @@
     "url": "https://github.com/luokai-demo/dsh-plugins"
    },
    "metadata": {
+    "category": "usage",
     "keywords": [
      "deepseek",
      "deepseek-harness",
@@ -3236,6 +3407,7 @@
     "url": "https://github.com/riesbri/dshline"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -3285,6 +3457,62 @@
    ]
   },
   {
+   "name": "@tnnevol/dsh-codebuddy",
+   "title": "fnos-dsh#dsh-codebuddy-plugin",
+   "description": {
+    "en": "Tencent CodeBuddy model provider for DeepSeek Harness that signs in with browser OAuth instead of an API key, lists the CodeBuddy model catalog with the context, output, tool-calling, reasoning and image capabilities of each model, keeps multiple accounts with automatic failover to the next usable one, shows remaining quota in the composer with a token and credit usage panel, and completes automat",
+    "zh": "为 DeepSeek Harness 接入腾讯 CodeBuddy 模型：用浏览器 OAuth 登录替代 API Key，列出 CodeBuddy 模型目录及每个模型的上下文、输出、工具调用、推理与图片能力，支持多账号并在当前账号不可用时自动切换，在输入区显示额度余量并提供 Token 与积分用量面板，还能按账号完成可自动化的 CodeBuddy 成长任务并查看执行日志。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-codebuddy`。"
+   },
+   "author": "fnosp",
+   "homepage": "https://fndsh-doc.tnnevol.cn/plugins/dsh-codebuddy",
+   "repository": {
+    "url": "https://github.com/fnosp/fnos-dsh"
+   },
+   "metadata": {
+    "category": "model",
+    "keywords": [
+     "model",
+     "dsh.so-verified-L5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.2.0-rc.2.4",
+     "publishTimestamp": 1792120810,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
+     "version": "0.2.0-rc.2.3",
+     "publishTimestamp": 1792060290,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
+     "version": "0.2.0-rc.2.0",
+     "publishTimestamp": 1791455194,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    }
+   ]
+  },
+  {
    "name": "@luisarg/memory-mcp",
    "title": "dsh-memory-vault#memory-mcp",
    "description": {
@@ -3297,6 +3525,7 @@
     "url": "https://github.com/luisarg03/dsh-memory-vault"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "memory",
      "dsh.so-verified-L5"
@@ -3352,6 +3581,7 @@
     "url": "https://github.com/kirkchinese/citeciter"
    },
    "metadata": {
+    "category": "session",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -3421,6 +3651,7 @@
     "url": "https://github.com/edge-echo/dsh-mcp-bridge"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -3484,6 +3715,7 @@
     "url": "https://github.com/wingsky-1/dsh-plugin-hub"
    },
    "metadata": {
+    "category": "skill",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -3544,6 +3776,7 @@
     "url": "https://github.com/agentscope-ai/reme"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "reme",
      "memory",
@@ -3558,6 +3791,16 @@
     "sortKeys": {}
    },
    "versions": [
+    {
+     "version": "0.1.2",
+     "publishTimestamp": 1792122135,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "^0.1.7-rc.2 || ^0.2.0-rc.2 || ^0.2.1-alpha.2"
+     }
+    },
     {
      "version": "0.1.0",
      "publishTimestamp": 1789362666,
@@ -3583,6 +3826,7 @@
     "url": "https://github.com/luisarg03/dsh-memory-vault"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "memory",
      "dsh.so-verified-L5"
@@ -3638,6 +3882,7 @@
     "url": "https://github.com/alizeli/belief-merge"
    },
    "metadata": {
+    "category": "session",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -3703,6 +3948,7 @@
     "url": "https://github.com/sur-cai/macos-computer-use-kit"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh-plugin",
      "dsh",
@@ -3765,6 +4011,7 @@
     "url": "https://github.com/bitsmug/dsh-bgjobs"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -3826,6 +4073,7 @@
     "url": "https://github.com/converk/dsh-tweaks"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -3875,6 +4123,7 @@
     "url": "https://github.com/tomowang/dsh-data-agent"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "tools",
      "dsh.so-verified-L5"
@@ -3928,6 +4177,7 @@
     "url": "https://github.com/volcengine/ark-cli"
    },
    "metadata": {
+    "category": "model",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -3969,6 +4219,7 @@
     "url": "https://github.com/perrylink/dsh-plugin-kit"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -4036,6 +4287,7 @@
     "url": "https://github.com/yu-wenchao/dsh-opencode-free-models"
    },
    "metadata": {
+    "category": "model",
     "keywords": [
      "deepseek-harness",
      "dsh-plugin",
@@ -4075,6 +4327,7 @@
     "url": "https://github.com/signalight/codex-to-dsh-pet"
    },
    "metadata": {
+    "category": "fun",
     "keywords": [
      "fun",
      "dsh.so-verified-L5"
@@ -4130,6 +4383,7 @@
     "url": "https://github.com/cerbur/clutch-dsh"
    },
    "metadata": {
+    "category": "session",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -4190,6 +4444,7 @@
     "url": "https://github.com/yugasun/dsh-plugins"
    },
    "metadata": {
+    "category": "browser",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -4242,61 +4497,6 @@
    ]
   },
   {
-   "name": "@lovedolove/dsh-project-memory",
-   "title": "Project-Memory-Agent#dsh-plugin",
-   "description": {
-    "en": "DSH bundle plugin that mounts 8 Project Memory skills, bootstraps memory architecture on first use, and registers codebase-memory bridge tools.",
-    "zh": "DSH 插件：挂载 8 个 Project Memory 技能，首次使用时引导记忆架构初始化，并注册 codebase-memory 桥接工具。"
-   },
-   "author": "lovedolove",
-   "homepage": "https://github.com/LoveDoLove/Project-Memory-Agent#readme",
-   "repository": {
-    "url": "https://github.com/lovedolove/project-memory-agent"
-   },
-   "metadata": {
-    "keywords": [
-     "memory",
-     "dsh.so-verified-L5"
-    ],
-    "labels": [
-     "dsh.so-verified-l5"
-    ],
-    "sortKeys": {}
-   },
-   "versions": [
-    {
-     "version": "0.5.4",
-     "publishTimestamp": 1790093314,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": ">=0.1.2-rc.1 <0.2.0-0"
-     }
-    },
-    {
-     "version": "0.5.3",
-     "publishTimestamp": 1790092391,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": ">=0.1.2-rc.1 <0.2.0-0"
-     }
-    },
-    {
-     "version": "0.5.2",
-     "publishTimestamp": 1790084043,
-     "source": {
-      "type": "npm"
-     },
-     "engines": {
-      "dsh": ">=0.1.2-rc.1 <0.2.0-0"
-     }
-    }
-   ]
-  },
-  {
    "name": "@mackwan84/dsh-ui-mockup-bundle",
    "title": "dsh-ui-mockup#ui-mockup",
    "description": {
@@ -4309,6 +4509,7 @@
     "url": "https://github.com/mackwan84/dsh-ui-mockup"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -4367,6 +4568,7 @@
     "url": "https://github.com/icodesign/orbis"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -4425,6 +4627,7 @@
     "url": "https://github.com/whyihaveyou/dsh-suite"
    },
    "metadata": {
+    "category": "market",
     "keywords": [
      "deepseek-harness",
      "dsh-plugin",
@@ -4479,6 +4682,7 @@
     "url": "https://github.com/angeloszou/graphlint"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dsh-plugin",
      "dsh",
@@ -4542,6 +4746,7 @@
     "url": "https://github.com/tiphareth0/dsh-hardssh"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -4602,6 +4807,7 @@
     "url": "https://github.com/baiiduu/dsh-semgrep-sast"
    },
    "metadata": {
+    "category": "security",
     "keywords": [
      "deepseek-harness",
      "dsh-plugin",
@@ -4661,6 +4867,7 @@
     "url": "https://github.com/melandlabs/opencontext"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -4722,6 +4929,7 @@
     "url": "https://github.com/darren-tang/dsh-provenance"
    },
    "metadata": {
+    "category": "security",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -4765,6 +4973,7 @@
     "url": "https://github.com/wly8691-jpg/knowlp-rag"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "tools",
      "dsh.so-verified-L5"
@@ -4814,6 +5023,7 @@
     "url": "https://github.com/pymodel/dsh-research-plugins"
    },
    "metadata": {
+    "category": "browser",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -4874,6 +5084,7 @@
     "url": "https://github.com/bcy2020/dsh-cc-ecosystem"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -4928,6 +5139,7 @@
     "url": "https://github.com/ceelog/dsh-plugins"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -4983,6 +5195,7 @@
     "url": "https://github.com/vast-ai-research/tripo3d-plugin-dsh"
    },
    "metadata": {
+    "category": "skill",
     "keywords": [
      "dsh-plugin",
      "dsh",
@@ -5044,6 +5257,7 @@
     "url": "https://github.com/yxy050208/multisim-mcp"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh-plugin",
      "deepseek",
@@ -5102,6 +5316,7 @@
     "url": "https://github.com/pymodel/dsh-research-plugins"
    },
    "metadata": {
+    "category": "browser",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -5158,6 +5373,7 @@
     "url": "https://github.com/pymodel/dsh-research-plugins"
    },
    "metadata": {
+    "category": "docs",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -5214,6 +5430,7 @@
     "url": "https://github.com/314857493/dsh-vision"
    },
    "metadata": {
+    "category": "vision",
     "keywords": [
      "dsh",
      "deepseek",
@@ -5276,6 +5493,7 @@
     "url": "https://github.com/wsxwj123/dsh-plugins"
    },
    "metadata": {
+    "category": "theme",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -5337,6 +5555,7 @@
     "url": "https://github.com/wsxwj123/dsh-plugins"
    },
    "metadata": {
+    "category": "session",
     "keywords": [
      "session",
      "dsh.so-verified-L5"
@@ -5386,6 +5605,7 @@
     "url": "https://github.com/cerbur/clutch-dsh"
    },
    "metadata": {
+    "category": "fun",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -5446,6 +5666,7 @@
     "url": "https://github.com/microherox/dsh-koboldcpp-hands"
    },
    "metadata": {
+    "category": "vision",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -5499,6 +5720,7 @@
     "url": "https://github.com/tafcear/kimi-tide"
    },
    "metadata": {
+    "category": "model",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -5562,6 +5784,7 @@
     "url": "https://github.com/linxuhao/deepseek-continuity"
    },
    "metadata": {
+    "category": "vision",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -5623,6 +5846,7 @@
     "url": "https://github.com/314857493/dsh-vision"
    },
    "metadata": {
+    "category": "vision",
     "keywords": [
      "dsh",
      "deepseek",
@@ -5685,6 +5909,7 @@
     "url": "https://github.com/finderchangchang/brewreel"
    },
    "metadata": {
+    "category": "skill",
     "keywords": [
      "dsh-plugin",
      "brewreel",
@@ -5745,6 +5970,7 @@
     "url": "https://github.com/dennisrongo/dsh-plugins"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "ai-coding-agent",
      "claude-code-alternative",
@@ -5805,6 +6031,7 @@
     "url": "https://github.com/dhicoc/dsh-codex-web-search-mcp"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -5862,6 +6089,7 @@
     "url": "https://github.com/lxp731/agents-plugins"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "deepseek",
      "harness",
@@ -5920,6 +6148,7 @@
     "url": "https://github.com/sischoi/daruma"
    },
    "metadata": {
+    "category": "model",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -5981,6 +6210,7 @@
     "url": "https://github.com/strukto-ai/mirage"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dev",
      "dsh.so-verified-L5"
@@ -6036,6 +6266,7 @@
     "url": "https://github.com/omicverse/dsh-omicos"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -6099,6 +6330,7 @@
     "url": "https://github.com/kaziii/dsh-github-connector"
    },
    "metadata": {
+    "category": "git",
     "keywords": [
      "git",
      "dsh.so-verified-L5"
@@ -6134,6 +6366,7 @@
     "url": "https://github.com/yinnho/aginxbrowser"
    },
    "metadata": {
+    "category": "browser",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -6185,6 +6418,7 @@
     "url": "https://github.com/wulun811/liuhe"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -6240,6 +6474,7 @@
     "url": "https://github.com/januory/deepseek-harness-gateway"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "remote",
      "dsh.so-verified-L5"
@@ -6289,6 +6524,7 @@
     "url": "https://github.com/volcengine/ark-cli"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -6331,6 +6567,7 @@
     "url": "https://github.com/whyihaveyou/dsh-suite"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "deepseek-harness",
      "dsh-plugin",
@@ -6379,6 +6616,67 @@
    ]
   },
   {
+   "name": "@pbfuzz/dsh-kanalyzer",
+   "title": "pbfuzz#dsh-kanalyzer",
+   "description": {
+    "en": "LLVM static-analysis plugin that builds whole-program bitcode for C/C++ projects and runs kernel-analyzer (KAMain) reachability analysis on it, providing kanalyzer_* tools to the agent and a ctx.kanalyzer service to other plugins.",
+    "zh": "LLVM 静态分析插件，可为 C/C++ 项目构建整程序 LLVM bitcode，并在其上运行 kernel-analyzer（KAMain）可达性分析，向智能体提供 kanalyzer_* 工具，并向其他插件提供 ctx.kanalyzer 服务。"
+   },
+   "author": "sgzeng",
+   "homepage": "https://github.com/sgzeng/pbfuzz/tree/master/packages/dsh-kanalyzer",
+   "repository": {
+    "url": "https://github.com/sgzeng/pbfuzz"
+   },
+   "metadata": {
+    "category": "dev",
+    "keywords": [
+     "dsh-plugin",
+     "deepseek-harness",
+     "llvm",
+     "static-analysis",
+     "reachability",
+     "dev",
+     "dsh.so-verified-L5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.21",
+     "publishTimestamp": 1790930000,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0"
+     }
+    },
+    {
+     "version": "0.1.20",
+     "publishTimestamp": 1790929662,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0"
+     }
+    },
+    {
+     "version": "0.1.19",
+     "publishTimestamp": 1790929359,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0"
+     }
+    }
+   ]
+  },
+  {
    "name": "dsh-acp-door",
    "title": "dsh-vscode#dsh-door",
    "description": {
@@ -6391,6 +6689,7 @@
     "url": "https://github.com/elk-9527/dsh-vscode"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -6441,6 +6740,7 @@
     "url": "https://github.com/co-engram/co-engram"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -6497,6 +6797,7 @@
     "url": "https://github.com/wsxwj123/dsh-plugins"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -6538,6 +6839,7 @@
     "url": "https://github.com/lsq-dsh-plugins/dsh-workbench-layout"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -6593,6 +6895,7 @@
     "url": "https://github.com/gezi-wen/dsh-skill-authoring"
    },
    "metadata": {
+    "category": "skill",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -6639,6 +6942,7 @@
     "url": "https://github.com/ianho7/dsh-port-inspector"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dev",
      "dsh.so-verified-L5"
@@ -6672,6 +6976,7 @@
     "url": "https://github.com/bolunhan/cc-monitor"
    },
    "metadata": {
+    "category": "notify",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -6726,6 +7031,7 @@
     "url": "https://github.com/dennisrongo/dsh-plugins"
    },
    "metadata": {
+    "category": "git",
     "keywords": [
      "ai-coding-agent",
      "claude-code-alternative",
@@ -6786,6 +7092,7 @@
     "url": "https://github.com/fuqiangcraft/dsh-desktop"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -6842,6 +7149,7 @@
     "url": "https://github.com/nickhelion/dsh-plugins"
    },
    "metadata": {
+    "category": "notify",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -6900,6 +7208,7 @@
     "url": "https://github.com/temotee2103/dsh-overdrive"
    },
    "metadata": {
+    "category": "notify",
     "keywords": [
      "notify",
      "dsh.so-verified-L5"
@@ -6951,6 +7260,7 @@
     "url": "https://github.com/geml-spec/geml"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh-plugin",
      "dsh",
@@ -7007,6 +7317,7 @@
     "url": "https://github.com/23swccp/dsh-undo"
    },
    "metadata": {
+    "category": "session",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -7062,6 +7373,7 @@
     "url": "https://github.com/ceelog/dsh-plugins"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "workflow",
      "dsh.so-verified-L5"
@@ -7117,6 +7429,7 @@
     "url": "https://github.com/jsdvjx/dshn"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -7172,6 +7485,7 @@
     "url": "https://github.com/jiazz197-cmyk/omd-dsh"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -7234,6 +7548,7 @@
     "url": "https://github.com/moonlitdropofblood/dsh-desktop"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -7263,6 +7578,67 @@
    ]
   },
   {
+   "name": "@pbfuzz/dsh-pbfuzz",
+   "title": "pbfuzz#dsh-pbfuzz",
+   "description": {
+    "en": "Directed fuzzing driven by an LLM agent: from a target repository and a bug (CVE description, patch, crash trace, or file:line), it runs a PLAN, IMPLEMENT, EXECUTE, REFLECT loop in which the model writes Python input generators, until an input triggers the campaign's stderr-pattern oracle or the campaign stops.",
+    "zh": "由 LLM 智能体驱动的定向模糊测试：给定目标仓库和一个缺陷（CVE 描述、补丁、崩溃调用栈或 file:line），它运行 PLAN、IMPLEMENT、EXECUTE、REFLECT 循环，由模型编写 Python 输入生成器，直到某个输入触发该 campaign 基于 stderr 模式匹配的 oracle，或 campaign 停止。"
+   },
+   "author": "sgzeng",
+   "homepage": "https://github.com/sgzeng/pbfuzz/tree/master/packages/dsh-pbfuzz",
+   "repository": {
+    "url": "https://github.com/sgzeng/pbfuzz"
+   },
+   "metadata": {
+    "category": "security",
+    "keywords": [
+     "dsh-plugin",
+     "deepseek-harness",
+     "fuzzing",
+     "directed-fuzzing",
+     "vulnerability-reproduction",
+     "security",
+     "dsh.so-verified-L5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.1.21",
+     "publishTimestamp": 1790929992,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0"
+     }
+    },
+    {
+     "version": "0.1.20",
+     "publishTimestamp": 1790929584,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0"
+     }
+    },
+    {
+     "version": "0.1.19",
+     "publishTimestamp": 1790929379,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0"
+     }
+    }
+   ]
+  },
+  {
    "name": "dsh-screenshot-feedback-hook-mcp",
    "title": "screenshot-feedback-hook-mcp#dsh-screenshot-feedback-hook-mcp",
    "description": {
@@ -7275,6 +7651,7 @@
     "url": "https://github.com/lkh081231/screenshot-feedback-hook-mcp"
    },
    "metadata": {
+    "category": "vision",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -7336,6 +7713,7 @@
     "url": "https://github.com/vesna-strivozha/dsh-llm-wiki-plugin"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "memory",
      "dsh.so-verified-L5"
@@ -7391,6 +7769,7 @@
     "url": "https://github.com/gezi-wen/dsh-plugin-development"
    },
    "metadata": {
+    "category": "skill",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -7444,6 +7823,7 @@
     "url": "https://github.com/converk/dsh-tweaks"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -7485,6 +7865,7 @@
     "url": "https://github.com/dennisrongo/dsh-plugins"
    },
    "metadata": {
+    "category": "skill",
     "keywords": [
      "ai-coding-agent",
      "claude-code-alternative",
@@ -7539,6 +7920,7 @@
     "url": "https://github.com/sumomok/dsh-plugins"
    },
    "metadata": {
+    "category": "usage",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -7590,6 +7972,7 @@
     "url": "https://github.com/mengxiaoxian/lookover"
    },
    "metadata": {
+    "category": "vision",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -7642,6 +8025,7 @@
     "url": "https://github.com/microherox/dsh-exa-mcp"
    },
    "metadata": {
+    "category": "browser",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -7682,6 +8066,7 @@
     "url": "https://github.com/mengxiaoxian/lookover"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -7732,6 +8117,7 @@
     "url": "https://github.com/wsxwj123/dsh-plugins"
    },
    "metadata": {
+    "category": "notify",
     "keywords": [
      "notify",
      "dsh.so-verified-L5"
@@ -7765,6 +8151,7 @@
     "url": "https://github.com/timwhitez/dsh-self-evolving"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -7823,6 +8210,7 @@
     "url": "https://github.com/memorylake-ai/memorylake-harness"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -7862,6 +8250,7 @@
     "url": "https://github.com/pavangupta352/stalegreen"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -7902,6 +8291,7 @@
     "url": "https://github.com/tzhr-invest/dsh-plugins"
    },
    "metadata": {
+    "category": "browser",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -7965,6 +8355,7 @@
     "url": "https://github.com/neumannzc/dsh-archive-manager"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -8015,6 +8406,7 @@
     "url": "https://github.com/sumomok/dsh-plugins"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -8064,6 +8456,7 @@
     "url": "https://github.com/dennisrongo/dsh-plugins"
    },
    "metadata": {
+    "category": "skill",
     "keywords": [
      "ai-coding-agent",
      "claude-code-alternative",
@@ -8110,6 +8503,7 @@
     "url": "https://github.com/fangqian616/dsh-say"
    },
    "metadata": {
+    "category": "voice",
     "keywords": [
      "dsh",
      "cordis",
@@ -8151,6 +8545,7 @@
     "url": "https://github.com/fxylabs/superself"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "dsh-plugin",
      "dsh",
@@ -8193,6 +8588,7 @@
     "url": "https://github.com/kevinchu1981/dsh-insurance-experts"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh-plugin",
      "deepseek",
@@ -8250,6 +8646,7 @@
     "url": "https://github.com/dennisrongo/dsh-plugins"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "ai-coding-agent",
      "claude-code-alternative",
@@ -8310,6 +8707,7 @@
     "url": "https://github.com/kevinchu1981/dsh-insurance-experts"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh-plugin",
      "deepseek",
@@ -8368,6 +8766,7 @@
     "url": "https://github.com/gou-gee/deepseek-vision"
    },
    "metadata": {
+    "category": "vision",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -8431,6 +8830,7 @@
     "url": "https://github.com/converk/dsh-tweaks"
    },
    "metadata": {
+    "category": "model",
     "keywords": [
      "model",
      "dsh.so-verified-L5"
@@ -8464,6 +8864,7 @@
     "url": "https://github.com/fitbbc/dsh-plugin-tokenmarket"
    },
    "metadata": {
+    "category": "model",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -8511,6 +8912,7 @@
     "url": "https://github.com/linxuhao/aitelier"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "aitelier",
      "dsh-plugin",
@@ -8571,6 +8973,7 @@
     "url": "https://github.com/zjsthmjialin/commercial-ui-ux-codex-skill"
    },
    "metadata": {
+    "category": "skill",
     "keywords": [
      "deepseek-harness",
      "dsh-plugin",
@@ -8609,6 +9012,7 @@
     "url": "https://github.com/ciky20171114/dsh-plugin-midscene"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -8650,6 +9054,7 @@
     "url": "https://github.com/gitroomhq/postiz-agent"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -8692,6 +9097,7 @@
     "url": "https://github.com/2nd1st/dsh-plugin-open-app"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -8742,6 +9148,7 @@
     "url": "https://github.com/kevinchu1981/dsh-insurance-experts"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh-plugin",
      "deepseek",
@@ -8790,6 +9197,7 @@
     "url": "https://github.com/que3sui/dsh-darwin"
    },
    "metadata": {
+    "category": "session",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -8829,6 +9237,7 @@
     "url": "https://github.com/converk/dsh-tweaks"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -8862,6 +9271,7 @@
     "url": "https://github.com/que3sui/dsh-darwin"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -8901,6 +9311,7 @@
     "url": "https://github.com/mario03690/dsh-netcafe"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -8961,6 +9372,7 @@
     "url": "https://github.com/kevinchu1981/dsh-insurance-experts"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh-plugin",
      "deepseek",
@@ -9031,6 +9443,7 @@
     "url": "https://github.com/wayneyu430/dsh-voice-agent"
    },
    "metadata": {
+    "category": "voice",
     "keywords": [
      "voice",
      "dsh.so-verified-L5"
@@ -9086,6 +9499,7 @@
     "url": "https://github.com/anweat/dsh-substrate"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -9140,6 +9554,7 @@
     "url": "https://github.com/haoyu-qi/dsh-zentao"
    },
    "metadata": {
+    "category": "notify",
     "keywords": [
      "notify",
      "dsh.so-verified-L5"
@@ -9195,6 +9610,7 @@
     "url": "https://github.com/lory69060/cn-intel-mcp-dsh"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -9235,6 +9651,7 @@
     "url": "https://github.com/gugu123a/dsh-tool-see-image"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "deepseek",
@@ -9287,6 +9704,7 @@
     "url": "https://github.com/ijry/deepseek-harness-desktop-ultra"
    },
    "metadata": {
+    "category": "model",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -9329,6 +9747,7 @@
     "url": "https://github.com/cola1018/dsh-aicc-zhunao"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -9367,6 +9786,7 @@
     "url": "https://github.com/wikkd/dsh-remote-access-web"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "remote",
      "dsh.so-verified-L5"
@@ -9408,6 +9828,7 @@
     "url": "https://github.com/taptap/instant-games-open-mcp"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -9450,6 +9871,7 @@
     "url": "https://github.com/tinqiao-oss/clawtouch-mcp"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -9507,6 +9929,7 @@
     "url": "https://github.com/shendeguize/agentsidecar"
    },
    "metadata": {
+    "category": "session",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -9567,6 +9990,7 @@
     "url": "https://github.com/zhengjy01/dsh-start"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -9625,6 +10049,7 @@
     "url": "https://github.com/creait-nl/dsh-plugins"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -9679,6 +10104,7 @@
     "url": "https://github.com/itr-del/dsh-cue-bank"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -9718,6 +10144,7 @@
     "url": "https://github.com/zhaoolee/notes"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "deepseek",
      "deepseek-harness",
@@ -9779,6 +10206,7 @@
     "url": "https://github.com/creait-nl/dsh-plugins"
    },
    "metadata": {
+    "category": "browser",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -9831,6 +10259,7 @@
     "url": "https://github.com/opencues/opencues"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -9886,6 +10315,7 @@
     "url": "https://github.com/ising-tech/isingq-toolkit"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "deepseek-harness",
      "dsh-plugin",
@@ -9948,6 +10378,7 @@
     "url": "https://github.com/recoluan/recowork"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "recowork",
      "deepseek",
@@ -10002,6 +10433,7 @@
     "url": "https://github.com/alvinunreal/openpets"
    },
    "metadata": {
+    "category": "notify",
     "keywords": [
      "dsh",
      "cordis",
@@ -10055,6 +10487,7 @@
     "url": "https://github.com/greyoak111/siyuan-codex-bridge"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -10108,6 +10541,7 @@
     "url": "https://github.com/agentdebugx/agentdebugx"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "deepseek-harness",
      "dsh-plugin",
@@ -10148,6 +10582,7 @@
     "url": "https://github.com/super3ben/agent-feedback-loop"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -10187,6 +10622,7 @@
     "url": "https://github.com/zjsthmjialin/inspiration-deck-workshop"
    },
    "metadata": {
+    "category": "docs",
     "keywords": [
      "deepseek-harness",
      "dsh-plugin",
@@ -10235,6 +10671,7 @@
     "url": "https://github.com/floating-dreaming/dsh-minimax-usage"
    },
    "metadata": {
+    "category": "usage",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -10278,6 +10715,62 @@
    ]
   },
   {
+   "name": "@tnnevol/dsh-semi-ui-showcase",
+   "title": "fnos-dsh#dsh-semi-ui-showcase-plugin",
+   "description": {
+    "en": "Component checklist for the shared Semi Design package used by tnnevol DSH plugins, opened from a `Semi UI` button in a conversation header: 35 components plus a multi-account case page, organised into seven sidebar groups from inputs, forms, selectors and trees to tables, cards, overlays and feedback, each rendered live with a one-line description and a page outline, with light, dark and follow-s",
+    "zh": "tnnevol 系列 DSH 插件共用的 Semi Design 组件检查页，从会话头部的 `Semi UI` 按钮进入：35 个组件加一个多账号案例页，按七个侧边分组组织，涵盖输入、表单、选择器、树、表格、卡片、浮层与反馈，逐个实渲并配一句话说明与页内目录，可切换浅色、深色与跟随系统预览。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-semi-ui-showcase`。"
+   },
+   "author": "fnosp",
+   "homepage": "https://fndsh-doc.tnnevol.cn/plugins/dsh-semi-ui-showcase",
+   "repository": {
+    "url": "https://github.com/fnosp/fnos-dsh"
+   },
+   "metadata": {
+    "category": "dev",
+    "keywords": [
+     "dev",
+     "dsh.so-verified-L5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.2.0-rc.2.4",
+     "publishTimestamp": 1792120880,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
+     "version": "0.2.0-rc.2.3",
+     "publishTimestamp": 1792060944,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    },
+    {
+     "version": "0.2.0-rc.2.0",
+     "publishTimestamp": 1791455478,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    }
+   ]
+  },
+  {
    "name": "dsh-plugin-mission-control",
    "title": "JARVIS-Mission-Control-DeepSeek#dsh-plugin-mission-control",
    "description": {
@@ -10290,6 +10783,7 @@
     "url": "https://github.com/asif2bd/jarvis-mission-control-deepseek"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -10329,6 +10823,7 @@
     "url": "https://github.com/zjsthmjialin/pdf-background-gray-codex-skill"
    },
    "metadata": {
+    "category": "docs",
     "keywords": [
      "deepseek-harness",
      "dsh-plugin",
@@ -10368,6 +10863,7 @@
     "url": "https://github.com/ankali-aylina/code-rag"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "deepseek",
      "harness",
@@ -10425,6 +10921,7 @@
     "url": "https://github.com/dennisrongo/dsh-plugins"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -10474,6 +10971,7 @@
     "url": "https://github.com/lxp731/agents-plugins"
    },
    "metadata": {
+    "category": "notify",
     "keywords": [
      "deepseek",
      "deepseek-harness",
@@ -10530,6 +11028,7 @@
     "url": "https://github.com/xinchen03/minta"
    },
    "metadata": {
+    "category": "memory",
     "keywords": [
      "memory",
      "dsh.so-verified-L5"
@@ -10579,6 +11078,7 @@
     "url": "https://github.com/creait-nl/dsh-plugins"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -10632,6 +11132,7 @@
     "url": "https://github.com/omdsh-dev/stent"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dev",
      "dsh.so-verified-L5"
@@ -10681,6 +11182,7 @@
     "url": "https://github.com/lw0129a/dsh-app-packager"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -10743,6 +11245,7 @@
     "url": "https://github.com/l-ingqin12/dsh-redaction"
    },
    "metadata": {
+    "category": "security",
     "keywords": [
      "dsh-plugin",
      "dsh",
@@ -10794,6 +11297,7 @@
     "url": "https://github.com/l-ingqin12/dsh-redaction"
    },
    "metadata": {
+    "category": "security",
     "keywords": [
      "dsh-plugin",
      "dsh",
@@ -10848,6 +11352,7 @@
     "url": "https://github.com/gezi-wen/dsh-repair"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -10887,6 +11392,7 @@
     "url": "https://github.com/ijry/deepseek-harness-desktop-ultra"
    },
    "metadata": {
+    "category": "session",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -10928,6 +11434,7 @@
     "url": "https://github.com/ijry/deepseek-harness-desktop-ultra"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -10969,6 +11476,7 @@
     "url": "https://github.com/leo-ayh-oday/dsh-orcana"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dev",
      "dsh.so-verified-L5"
@@ -11018,6 +11526,7 @@
     "url": "https://github.com/nyantused-cpun/folio"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -11061,6 +11570,7 @@
     "url": "https://github.com/nyantused-cpun/folio"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -11104,6 +11614,7 @@
     "url": "https://github.com/ijry/deepseek-harness-desktop-ultra"
    },
    "metadata": {
+    "category": "git",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -11147,6 +11658,7 @@
     "url": "https://github.com/ph4310822/dsh-edex-xry-ui"
    },
    "metadata": {
+    "category": "theme",
     "keywords": [
      "theme",
      "dsh.so-verified-L5"
@@ -11196,6 +11708,7 @@
     "url": "https://github.com/ph4310822/dsh-edex-ui"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -11229,6 +11742,7 @@
     "url": "https://github.com/kouyichi/dsh-plugins"
    },
    "metadata": {
+    "category": "skill",
     "keywords": [
      "skill",
      "dsh.so-verified-L5"
@@ -11270,6 +11784,7 @@
     "url": "https://github.com/1741505640/capmap-skills"
    },
    "metadata": {
+    "category": "docs",
     "keywords": [
      "docs",
      "dsh.so-verified-L5"
@@ -11325,6 +11840,7 @@
     "url": "https://github.com/creait-nl/dsh-plugins"
    },
    "metadata": {
+    "category": "model",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -11377,6 +11893,7 @@
     "url": "https://github.com/nyantused-cpun/gewu-tools"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "tools",
      "dsh.so-verified-L5"
@@ -11412,6 +11929,7 @@
     "url": "https://github.com/wsxwj123/dsh-plugins"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -11445,6 +11963,7 @@
     "url": "https://github.com/dennisrongo/dsh-plugins"
    },
    "metadata": {
+    "category": "dev",
     "keywords": [
      "dev",
      "dsh.so-verified-L5"
@@ -11500,6 +12019,7 @@
     "url": "https://github.com/ijry/deepseek-harness-desktop-ultra"
    },
    "metadata": {
+    "category": "remote",
     "keywords": [
      "dsh",
      "deepseek-harness",
@@ -11541,6 +12061,7 @@
     "url": "https://github.com/ph4310822/dsh-edex-jarvis-ui"
    },
    "metadata": {
+    "category": "ui",
     "keywords": [
      "ui",
      "dsh.so-verified-L5"
@@ -11574,6 +12095,7 @@
     "url": "https://github.com/kouyichi/dsh-plugins"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "tools",
      "dsh.so-verified-L5"
@@ -11603,6 +12125,59 @@
    ]
   },
   {
+   "name": "dsh-browser-crossplatform",
+   "title": "dsh-browser-crossplatform#bridge",
+   "description": {
+    "en": "Desktop half of the dsh browser extension: mounts a token-authenticated WebSocket bridge on the dsh webserver and exposes the browser_* tools that let the model read the tab you are on as text and act on it, with image recognition off until the user enables it.",
+    "zh": "dsh 浏览器扩展的桌面端一半：在 dsh 自带的 webserver 上挂一个带令牌校验的 WebSocket 桥，向模型暴露 browser_* 工具，让它读取并操作用户当前标签页，图片识别默认关闭、需用户自行开启。"
+   },
+   "author": "youbaiyun",
+   "homepage": "https://github.com/youbaiyun/dsh-browser-crossplatform#readme",
+   "repository": {
+    "url": "https://github.com/youbaiyun/dsh-browser-crossplatform"
+   },
+   "metadata": {
+    "category": "browser",
+    "keywords": [
+     "dsh",
+     "deepseek-harness",
+     "deepseek",
+     "browser-extension",
+     "cross-platform",
+     "multiplatform",
+     "windows",
+     "macos",
+     "linux",
+     "side-panel",
+     "ai-agent",
+     "browser-automation",
+     "websocket",
+     "dsh-plugin",
+     "dsh-market",
+     "plugin-manager",
+     "marketplace",
+     "browser",
+     "dsh.so-verified-L5"
+    ],
+    "labels": [
+     "dsh.so-verified-l5"
+    ],
+    "sortKeys": {}
+   },
+   "versions": [
+    {
+     "version": "0.38.5",
+     "publishTimestamp": 1791397904,
+     "source": {
+      "type": "npm"
+     },
+     "engines": {
+      "dsh": "0.2.0-rc.2"
+     }
+    }
+   ]
+  },
+  {
    "name": "dsh-plugins-a2a",
    "title": "dsh-plugins#dsh-a2a",
    "description": {
@@ -11615,6 +12190,7 @@
     "url": "https://github.com/kouyichi/dsh-plugins"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "tools",
      "dsh.so-verified-L5"
@@ -11656,6 +12232,7 @@
     "url": "https://github.com/kouyichi/dsh-plugins"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "tools",
      "dsh.so-verified-L5"
@@ -11697,6 +12274,7 @@
     "url": "https://github.com/yuloong07-star/dsh-prompt-system"
    },
    "metadata": {
+    "category": "tools",
     "keywords": [
      "dsh-plugin",
      "deepseek-harness",
@@ -11734,6 +12312,7 @@
     "url": "https://github.com/wxlei2004/dsh-plugins"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "dsh",
      "dsh-plugin",
@@ -11782,6 +12361,7 @@
     "url": "https://github.com/wxlei2004/dsh-plugins"
    },
    "metadata": {
+    "category": "workflow",
     "keywords": [
      "deepseek-harness",
      "dsh",
@@ -11829,6 +12409,7 @@
     "url": "https://github.com/wxlei2004/dsh-plugins"
    },
    "metadata": {
+    "category": "security",
     "keywords": [
      "dsh",
      "dsh-plugin",
