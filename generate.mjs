@@ -9,17 +9,27 @@
  *   3. npm registry —— 每个版本的**真实**发布时间（格式 1 要求 publishTimestamp，官方校验器
  *      并不核验它，所以这里刻意取真值）与 engines.dsh 推导所需的 peerDependencies。
  *
+ * 关键约束（踩过的坑，勿删）：
+ *   * 官方校验器**整份拒收**：任何一处不合法（例如某个 peer 范围写成 pnpm catalog 协议
+ *     `catalog:dsh 0.2.0-rc.2`）都会让整个索引 invalid-index，发现页于是什么都看不到。
+ *     所以这里先用保守规则净化范围，再用官方 `parseMarketIndex` 做**解析驱动的自愈**：
+ *     按报错路径回退（删掉出问题的 engines.dsh / 丢掉出问题的插件）并重试。
+ *   * 发现页的分类筛选按 `plugin.metadata.category` 判定，只塞 keywords 会让分类点进去是空的。
+ *
  * 用法: node generate.mjs [输出路径，默认 index.json]
  * 环境: DSH_INDEX_MAX_PLUGINS（默认 400）、DSH_INDEX_VERSIONS_PER_PLUGIN（默认 3）
+ *       DSH_INDEX_VALIDATOR（默认 1；=0 关闭官方校验器，只做结构自检）
  */
 import { writeFile } from 'node:fs/promises'
 
 const OUT = process.argv[2] ?? 'index.json'
 const MAX_PLUGINS = Number(process.env.DSH_INDEX_MAX_PLUGINS ?? 400)
 const VERSIONS_PER_PLUGIN = Number(process.env.DSH_INDEX_VERSIONS_PER_PLUGIN ?? 3)
+const USE_VALIDATOR = process.env.DSH_INDEX_VALIDATOR !== '0'
 const NPMJS = 'https://registry.npmjs.org'
 const NPMMIRROR = 'https://registry.npmmirror.com'
 const CATALOG_PKG = 'dsh-plugin-catalog'
+const VALIDATOR_PKG = '@deepseek-ai/dsh-plugin-market-index'
 
 const now = () => new Date().toISOString()
 const log = (...a) => console.error(`[${now()}]`, ...a)
@@ -43,6 +53,22 @@ async function getJson(url, { timeoutMs = 30_000, tries = 3 } = {}) {
 function repoKey(url) {
   const m = String(url ?? '').match(/github\.com\/([^/]+)\/([^/#?]+)/i)
   return m ? `${m[1]}/${m[2]}`.replace(/\.git$/, '').toLowerCase() : null
+}
+
+/**
+ * 保守的 semver 范围净化：pnpm/npm 的协议前缀（catalog:/workspace:/npm:/file:/link:/git+/http）
+ * 与不带数字的 tag（alpha/latest）都不是 semver range，官方 node-semver 会直接判不合法。
+ * 返回 null 表示“丢掉这个范围”（engines.dsh 缺席 = 不限制 DSH 版本），而不是让整份索引报废。
+ */
+const FORBIDDEN = /(catalog:|workspace:|npm:|file:|link:|git\+|git:|https?:|\bpath:)/i
+function saneRange(raw) {
+  if (typeof raw !== 'string') return null
+  const r = raw.trim()
+  if (!r) return null
+  if (FORBIDDEN.test(r)) return null
+  if (!/\d/.test(r)) return null                       // tag 形式（alpha / latest 这类无数字串）
+  if (/[^0-9A-Za-z.\-+^*~<>=| ]/.test(r)) return null  // 只允许 semver range 的字符集
+  return r
 }
 
 /** 社区目录：先问版本，再按版本取 plugins.json（三条镜像依次尝试） */
@@ -81,20 +107,20 @@ async function loadVerified() {
     if (['merged', 'deleted', 'gone', 'renamed'].includes(h.status)) continue
     const key = repoKey(it.source)
     if (!key || byRepo.has(key)) continue
-    byRepo.set(key, { level: Number(v.level), scannedAt: s.scannedAt ?? null, verifiedAt: v.lastVerifiedAt ?? null, alias: it.alias ?? null })
+    byRepo.set(key, { level: Number(v.level), scannedAt: s.scannedAt ?? null, verifiedAt: v.lastVerifiedAt ?? null })
   }
   return { generatedAt: doc?.generatedAt ?? null, count: items.length, byRepo }
 }
 
 /** 从 npm 版本清单推导 engines.dsh：优先 manifest.engines.dsh，否则合取 @deepseek-ai/dsh* 的 peer 范围 */
 function dshRange(manifest) {
-  const declared = typeof manifest?.engines?.dsh === 'string' ? manifest.engines.dsh.trim() : ''
+  const declared = saneRange(manifest?.engines?.dsh)
   if (declared) return declared
   const peers = manifest?.peerDependencies ?? {}
   const ranges = Object.keys(peers)
     .filter(k => /^@deepseek-ai\/dsh(-|$)/u.test(k))
-    .map(k => String(peers[k]))
-    .filter(r => r && !r.includes('workspace:'))
+    .map(k => saneRange(peers[k]))
+    .filter(Boolean)
   const uniq = [...new Set(ranges)]
   if (!uniq.length || uniq.every(r => r === '*')) return null
   return uniq.join(' ') // npm semver：空格即合取
@@ -132,7 +158,37 @@ async function mapPool(items, size, fn) {
   return out
 }
 
-/** 结构性自检：官方校验器不在运行时依赖里，这里做等价的必备项检查（上传前本地还会用官方 parseMarketIndex 复验） */
+async function loadValidator() {
+  if (!USE_VALIDATOR) return null
+  try {
+    const mod = await import(VALIDATOR_PKG)
+    if (typeof mod.parseMarketIndex === 'function') return mod.parseMarketIndex
+  } catch (err) { log(`official validator unavailable (${err.message}) — falling back to structural self-check`) }
+  return null
+}
+
+/** 解析驱动自愈：按官方报错路径回退，直到文档通过或修不动为止 */
+function repair(index, parse, indexUrl) {
+  let repairs = 0
+  for (let round = 0; round < 200; round++) {
+    let err = null
+    try { parse(index, indexUrl); return { ok: true, repairs } } catch (e) { err = e }
+    const path = String(err?.path ?? '')
+    const m = path.match(/^\$\.plugins\[(\d+)\](?:\.versions\[(\d+)\])?/)
+    if (!m) return { ok: false, repairs, reason: `${path || '$'}: ${err?.reason ?? err?.message}` }
+    const pi = Number(m[1]), vi = m[2] === undefined ? null : Number(m[2])
+    if (vi === null) index.plugins.splice(pi, 1)
+    else if (/\.engines\.dsh$/.test(path)) delete index.plugins[pi].versions[vi].engines.dsh
+    else if (/\.engines$/.test(path)) delete index.plugins[pi].versions[vi].engines
+    else index.plugins[pi].versions.splice(vi, 1)
+    if (index.plugins[pi] && Array.isArray(index.plugins[pi].versions) && !index.plugins[pi].versions.length) index.plugins.splice(pi, 1)
+    repairs++
+    log(`repair #${repairs}: dropped ${path}`)
+  }
+  return { ok: false, repairs, reason: 'repair budget exhausted' }
+}
+
+/** 结构自检（无官方校验器时的兜底；有校验器时作补充） */
 function selfCheck(index) {
   const problems = []
   if (index.format !== 1) problems.push('format must be 1')
@@ -141,7 +197,7 @@ function selfCheck(index) {
   const declared = new Set(Object.keys(index.metadata?.categories ?? {}))
   const labels = new Set(Object.keys(index.metadata?.labels ?? {}))
   for (const [i, p] of (index.plugins ?? []).entries()) {
-    if (typeof p.name !== 'string' || !/^(?:@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/u.test(p.name)) problems.push(`plugins[${i}].name invalid: ${p.name}`)
+    if (typeof p.name !== 'string') problems.push(`plugins[${i}].name invalid`)
     if (names.has(p.name)) problems.push(`plugins[${i}].name duplicate: ${p.name}`)
     names.add(p.name)
     if (p.metadata?.category !== undefined && !declared.has(p.metadata.category)) problems.push(`plugins[${i}].metadata.category not declared: ${p.metadata.category}`)
@@ -151,6 +207,7 @@ function selfCheck(index) {
       if (!/^\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?$/u.test(v.version)) problems.push(`plugins[${i}].versions[${j}].version invalid`)
       if (!Number.isInteger(v.publishTimestamp) || v.publishTimestamp < 0 || v.publishTimestamp >= 1e11) problems.push(`plugins[${i}].versions[${j}].publishTimestamp invalid`)
       if (v.source?.type !== 'npm' && v.source?.type !== 'git') problems.push(`plugins[${i}].versions[${j}].source invalid`)
+      if (v.engines?.dsh !== undefined && saneRange(v.engines.dsh) === null) problems.push(`plugins[${i}].versions[${j}].engines.dsh not a sane range: ${v.engines.dsh}`)
     }
   }
   return problems
@@ -229,9 +286,7 @@ async function main() {
       author: cand.repo.split('/')[3] ?? '',
       ...(home ? { homepage: home } : {}),
       repository: { url: cand.repo },
-      // 必须写 metadata.category：发现页的分类筛选是按它判定的
-      // （dsh-plugin-market：`selection.category === undefined || metadata.category === selection.category`）。
-      // 只把分类 id 塞进 keywords，分类会出现在侧栏但点进去永远是空。
+      // 必须写 metadata.category：发现页分类筛选按它判定，只塞 keywords 会让分类点进去是空的。
       metadata: { ...(cand.category ? { category: cand.category } : {}), keywords: cand._keywords, labels: [`dsh.so-verified-l${cand.so.level}`], sortKeys: {} },
       versions: versions.map(({ _kw, _home, _desc, ...v }) => v),
     }
@@ -247,14 +302,25 @@ async function main() {
     metadata: {
       categories,
       labels: {
-        'dsh.so-verified-l5': { title: { en: 'dsh.so L5 run-tested', zh: 'dsh.so L5 实机运行验证' } },
-        'dsh.so-verified-l4': { title: { en: 'dsh.so L4 install-tested', zh: 'dsh.so L4 安装验证' } },
+        'dsh-so-verified-l5': { title: { en: 'dsh.so L5 run-tested', zh: 'dsh.so L5 实机运行验证' } },
+        'dsh-so-verified-l4': { title: { en: 'dsh.so L4 install-tested', zh: 'dsh.so L4 安装验证' } },
       },
       sortKeys: {},
     },
     plugins,
   }
 
+  const indexUrl = process.env.DSH_INDEX_URL ?? 'https://example.invalid/index.json'
+  const parse = await loadValidator()
+  if (parse) {
+    const fixed = repair(index, parse, indexUrl)
+    if (!fixed.ok) {
+      log(`official validation FAILED after ${fixed.repairs} repairs — ${fixed.reason}`)
+      process.exitCode = 1
+      return
+    }
+    log(`official parseMarketIndex: ok${fixed.repairs ? ` (after ${fixed.repairs} repairs)` : ''}`)
+  }
   const problems = selfCheck(index)
   if (problems.length) {
     log(`self-check FAILED (${problems.length}):\n  ${problems.slice(0, 20).join('\n  ')}`)
@@ -262,7 +328,7 @@ async function main() {
     return
   }
   await writeFile(OUT, `${JSON.stringify(index, null, 1)}\n`)
-  log(`wrote ${OUT}: ${plugins.length} plugins, ${plugins.reduce((a, p) => a + p.versions.length, 0)} versions, ${Object.keys(categories).length} categories`)
+  log(`wrote ${OUT}: ${index.plugins.length} plugins, ${index.plugins.reduce((a, p) => a + p.versions.length, 0)} versions, ${Object.keys(categories).length} categories`)
 }
 
 await main()

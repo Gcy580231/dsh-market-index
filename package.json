@@ -1,0 +1,16 @@
+{
+  "name": "dsh-market-index",
+  "private": true,
+  "type": "module",
+  "description": "Format-1 DSH plugin market index generated from dsh.so verification + awesome-dsh-plugin catalog + npm publish times",
+  "license": "CC0-1.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node generate.mjs index.json"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-plugin-market-index": "0.2.1-alpha.4"
+  }
+}
