@@ -1,24 +1,24 @@
-# refresh index run — 2026-10-27T23:50:01Z
+# refresh index run — 2026-10-29T00:03:20Z
 
 ## npm install
 ```
 
-added 6 packages in 947ms
+added 6 packages in 1s
 ```
 ## generate
 ```
-[2026-10-27T23:49:49.128Z] loading dsh.so verification index …
-[2026-10-27T23:49:50.233Z] dsh.so: 26083 entries, 3823 verified repos (L4/L5 · audited · low risk · 0 critical · repo alive)
-[2026-10-27T23:49:50.233Z] loading community catalog (dsh.bundle-gated) …
-[2026-10-27T23:49:51.141Z] catalog: 7211 entries from https://cdn.jsdelivr.net/npm/dsh-plugin-catalog@2026.1027.11136/plugins.json
-[2026-10-27T23:49:51.146Z] join: 307 candidates, taking 307
-[2026-10-27T23:49:51.146Z] fetching real npm publish times …
-[2026-10-27T23:49:52.732Z]   …50/307
-[2026-10-27T23:49:54.001Z]   …100/307
-[2026-10-27T23:49:55.450Z]   …150/307
-[2026-10-27T23:49:56.710Z]   …200/307
-[2026-10-27T23:49:58.048Z]   …250/307
-[2026-10-27T23:49:59.353Z]   …300/307
-[2026-10-27T23:49:59.518Z] official parseMarketIndex: ok
-[2026-10-27T23:49:59.522Z] wrote index.json: 307 plugins, 780 versions, 22 categories
+[2026-10-29T00:03:10.274Z] loading dsh.so verification index …
+[2026-10-29T00:03:10.991Z] dsh.so: 26083 entries, 3823 verified repos (L4/L5 · audited · low risk · 0 critical · repo alive)
+[2026-10-29T00:03:10.991Z] loading community catalog (dsh.bundle-gated) …
+[2026-10-29T00:03:11.449Z] catalog: 7406 entries from https://cdn.jsdelivr.net/npm/dsh-plugin-catalog@2026.1028.11655/plugins.json
+[2026-10-29T00:03:11.453Z] join: 309 candidates, taking 309
+[2026-10-29T00:03:11.453Z] fetching real npm publish times …
+[2026-10-29T00:03:12.822Z]   …50/309
+[2026-10-29T00:03:13.994Z]   …100/309
+[2026-10-29T00:03:15.212Z]   …150/309
+[2026-10-29T00:03:16.416Z]   …200/309
+[2026-10-29T00:03:17.602Z]   …250/309
+[2026-10-29T00:03:18.796Z]   …300/309
+[2026-10-29T00:03:18.960Z] official parseMarketIndex: ok
+[2026-10-29T00:03:18.967Z] wrote index.json: 309 plugins, 787 versions, 22 categories
 ```
