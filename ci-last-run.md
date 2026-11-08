@@ -1,25 +1,25 @@
-# refresh index run — 2026-11-07T23:40:27Z
+# refresh index run — 2026-11-08T23:47:27Z
 
 ## npm install
 ```
 
-added 6 packages in 977ms
+added 6 packages in 2s
 ```
 ## generate
 ```
-[2026-11-07T23:40:13.763Z] loading dsh.so verification index …
-[2026-11-07T23:40:14.821Z] dsh.so: 28621 entries, 4058 verified repos (L4/L5 · audited · low risk · 0 critical · repo alive)
-[2026-11-07T23:40:14.822Z] loading community catalog (dsh.bundle-gated) …
-[2026-11-07T23:40:15.625Z] catalog: 9412 entries from https://cdn.jsdelivr.net/npm/dsh-plugin-catalog@2026.1107.16896/plugins.json
-[2026-11-07T23:40:15.638Z] join: 377 candidates, taking 377
-[2026-11-07T23:40:15.638Z] fetching real npm publish times …
-[2026-11-07T23:40:17.087Z]   …50/377
-[2026-11-07T23:40:18.369Z]   …100/377
-[2026-11-07T23:40:19.632Z]   …150/377
-[2026-11-07T23:40:20.773Z]   …200/377
-[2026-11-07T23:40:21.966Z]   …250/377
-[2026-11-07T23:40:23.158Z]   …300/377
-[2026-11-07T23:40:24.375Z]   …350/377
-[2026-11-07T23:40:25.217Z] official parseMarketIndex: ok
-[2026-11-07T23:40:25.224Z] wrote index.json: 377 plugins, 981 versions, 22 categories
+[2026-11-08T23:47:17.294Z] loading dsh.so verification index …
+[2026-11-08T23:47:18.024Z] dsh.so: 28621 entries, 4051 verified repos (L4/L5 · audited · low risk · 0 critical · repo alive)
+[2026-11-08T23:47:18.024Z] loading community catalog (dsh.bundle-gated) …
+[2026-11-08T23:47:18.386Z] catalog: 9463 entries from https://cdn.jsdelivr.net/npm/dsh-plugin-catalog@2026.1108.17019/plugins.json
+[2026-11-08T23:47:18.406Z] join: 378 candidates, taking 378
+[2026-11-08T23:47:18.406Z] fetching real npm publish times …
+[2026-11-08T23:47:19.294Z]   …50/378
+[2026-11-08T23:47:20.146Z]   …100/378
+[2026-11-08T23:47:21.051Z]   …150/378
+[2026-11-08T23:47:21.914Z]   …200/378
+[2026-11-08T23:47:22.679Z]   …250/378
+[2026-11-08T23:47:23.486Z]   …300/378
+[2026-11-08T23:47:24.459Z]   …350/378
+[2026-11-08T23:47:25.159Z] official parseMarketIndex: ok
+[2026-11-08T23:47:25.166Z] wrote index.json: 378 plugins, 986 versions, 22 categories
 ```
