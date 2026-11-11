@@ -1,4 +1,4 @@
-# refresh index run — 2026-11-10T02:47:15Z
+# refresh index run — 2026-11-11T00:42:11Z
 
 ## npm install
 ```
@@ -7,7 +7,7 @@ added 6 packages in 1s
 ```
 ## generate
 ```
-[2026-11-10T02:47:12.846Z] loading dsh.so verification index …
+[2026-11-11T00:42:08.921Z] loading dsh.so verification index …
 file:///home/runner/work/dsh-market-index/dsh-market-index/generate.mjs:45
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
                          ^
