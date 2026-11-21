@@ -1,13 +1,13 @@
-# refresh index run — 2026-11-20T01:47:34Z
+# refresh index run — 2026-11-21T01:35:32Z
 
 ## npm install
 ```
 
-added 6 packages in 2s
+added 6 packages in 1s
 ```
 ## generate
 ```
-[2026-11-20T01:47:31.065Z] loading dsh.so verification index …
+[2026-11-21T01:35:29.823Z] loading dsh.so verification index …
 file:///home/runner/work/dsh-market-index/dsh-market-index/generate.mjs:45
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
                          ^
@@ -19,5 +19,5 @@ Error: HTTP 404
     at async main (file:///home/runner/work/dsh-market-index/dsh-market-index/generate.mjs:237:20)
     at async file:///home/runner/work/dsh-market-index/dsh-market-index/generate.mjs:365:1
 
-Node.js v22.23.4
+Node.js v22.23.5
 ```
